@@ -15,7 +15,8 @@ df_corp<-corpus(df, text_field="text")
 df_corp <- gsub("([a-z])\\.([A-Z])", "\\1. \\2", df_corp)
 
 df_tokens <- tokens(df_corp, remove_punct = TRUE) %>%
-  tokens_remove(stopwords("en")) %>%
+  tokens_remove(c(stopwords("en"), "said", "mr", "ms", "mrs",
+                  "also", "get")) %>%
   tokens_tolower()
 
 # ---- Ontario signal, minus bare "ford" (handled separately below) ----

@@ -6,7 +6,7 @@ If the focus of the article is not about the Ontario election or provincial issu
 Step 2:
 You are a document analyzer. Only use the articles and no outside sources. 
 
- Take into account the follwing topics: 
+ Take into account the following topics: 
 
  housing
  tariffs_trade
@@ -103,7 +103,7 @@ APPENIDX:
 
 Leaders and Parties:
 
-Liberal (ontario liberal*): "crombie", "liberal member", "liberal backbecher", "liberal spokesperson"
+Liberal (ontario liberal*): "crombie", "liberal member", "liberal backbencher", "liberal spokesperson"
 NDP (ontario ndp): "stiles", "ndp member", "ndp backbecher", "ndp spokesperson"
 Green (ontario green*): "schreiner", "green member", "green backbecher", "green spokesperson"
 Pogressive Conservative (PC; progressive conserative*, ontario conserative): premier, Ford, the government, government minister, governmnet spokesperson

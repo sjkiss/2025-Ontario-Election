@@ -1,7 +1,8 @@
 
 #### Key ATM analysis ####
-
+source("R_Scripts/2_create_corpus.R")
 library(tidyverse)
+library(keyATM)
 dfm <- df_tokens_on %>% 
   dfm() 
 
@@ -12,31 +13,34 @@ keyatm_dfm <- keyATM_read(texts = dfm)
 keywords <- list(
   housing = c("housing", "rent", "rents", "renter", "landlord",
               "tenant", "mortgage", "homeless", "condo", "NIMBY",
-              "housing affordability", "homebuilding",
-              "homebuilder"),
+              "affordability", "homebuilding",
+              "homebuilder", "apartment", "apartments",
+              "encampment", "house", "permit", "zoning"),
   
   tariffs_trade = c("tariff", "tariffs", "trade",
-                    "protectionist", "countervail",
-                    "buy", "buy"),
+                    "protectionist", "countervailing",
+                    "buy", "strong"),
   
   taxes = c("tax", "taxes", "taxation", "taxpayer", "hst"),
   
-  health_care = c("health care", "healthcare", "hospital",
-                  "doctor", "physician", "primary care",
-                  "nurse", "nursing",
+  health_care = c("health-care", "healthcare", "hospital",
+                  "doctor", "physician", "care",
+                  "nurse", "nursing", "hospitals", "dr", 
                   "ohip", "surgery"),
   
   education = c("education", "school", "teacher", "classroom",
-                "curriculum", "kindergarten"),
+                "teachers",
+                "curriculum", "kindergarten", "schools", "students"),
   
   post_secondary = c("post-secondary", "postsecondary", "university",
-                     "college", "colleges", "tuition", 
+                     "college", "colleges", "tuition",  
                      "professor", "opseu", "campus", "universities",
                      "osap",
                      "student"),
   
-  # immigration = c("immigration", "immigrant", "migrant", "refugee",
-  #                 "asylum", "newcomer", "deportation", "visa"),
+  immigration = c("immigration", "immigrant", "migrant", "refugee",
+                  "asylum", "newcomer", "deportation", "visa", "immigrants",
+                  "newcomers"),
   
   crime = c("crime", "crimes", "criminal", "police", "policing",
             "theft", "shooting", "homicide",
@@ -63,6 +67,7 @@ Vars <- Vars %>%
          origin = replace(origin, origin == " The Toronto Sun ", " The Toronto Sun"),
          origin = replace(origin, origin == " The Windsor Star ", " The Windsor Star"),
          origin = replace(origin, origin == " Toronto S tar", " Toronto Star"),
+         origin = replace(origin, origin == " The Spectator", " The Hamilton Spectator "),
          origin = replace(origin, origin == " The Hamilton Specta tor ", " The Hamilton Spectator "),
          origin = replace(origin, origin == " The Hamilton Sp ectator ", " The Hamilton Spectator "),
          origin = replace(origin, origin == " National Post ", " National Post"),
@@ -77,7 +82,7 @@ Vars2 <- Vars %>%
 
 newssource <- keyATM(
   docs = keyatm_dfm,
-  no_keyword_topics = 5,
+  no_keyword_topics = 7,
   keywords = keywords,
   model = "covariates",
   model_settings = list(
@@ -87,11 +92,12 @@ newssource <- keyATM(
   options = list(seed = 1998)
 )
 
-Topic_frequency <- plot_topicprop(newssource, show_topic = 1:12)
+Topic_frequency <- plot_topicprop(newssource, show_topic = 1:15)
+newsource_keyatm <- top_words(newssource, n = 100)
 ggsave("Plots/Topic_frequency.png", Topic_frequency, width = 8, height = 5)
 covariates_info(newssource)
 
-newsource_keyatm <- top_words(newssource, n = 100)
+
 
 NEWSPAPERS <- c("National Post", "Sault Star", "The Globe and Mail",
                 "The Hamilton Spectator ", "The Ottawa Citizen", "The Spectator",
