@@ -363,18 +363,18 @@ fig_timetrend <- plot_timetrend(overtime, time_index_label = Vars_clean$week,
 ## Other_* topics need not be the same latent topics -- confirm against
 ## top_words(overtime) before trusting these five.
 TIMETREND_LABELS <- c(
-  housing        = "Housing*",
-  tariffs_trade  = "Tariffs/Trade*",
-  taxes          = "Taxes*",
-  health_care    = "Health Care*",
-  education      = "Education*",
-  post_secondary = "Post-Secondary*",
-  crime          = "Crime*",
+  `1_housing`        = "Housing*",
+  `2_tariffs_trade`  = "Tariffs/Trade*",
+  `3_taxes`          = "Taxes*",
+  `4_health_care`    = "Health Care*",
+  `5_education`      = "Education*",
+  `6_post_secondary` = "Post-Secondary* (LCBO)",
+  `7_crime`          = "Crime*",
   Other_1        = "Leaders",
-  Other_2        = "Ontario Place",
-  Other_3        = "Transportation",
+  Other_2        = "Energy",
+  Other_3        = "election",
   Other_4        = "Ford/Horse Race",
-  Other_5        = "LCBO"
+  Other_5        = "Transportation"
 )
 
 ## Order facets the way TIMETREND_LABELS lists them (keyword topics first).
