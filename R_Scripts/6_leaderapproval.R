@@ -18,12 +18,13 @@ library(lubridate)
 library(ggplot2)
 
 # --- 1. Download ---------------------------------------------------
-url <- "https://github.com/sjkiss/2025-Ontario-Election/raw/main/ontario_leader_approval_polls%20(1).xlsx"
-tmp <- tempfile(fileext = ".xlsx")
-download.file(url, tmp, mode = "wb")
+# url <- "https://github.com/sjkiss/2025-Ontario-Election/raw/main/ontario_leader_approval_polls%20(1).xlsx"
+# tmp <- tempfile(fileext = ".xlsx")
+# download.file(url, tmp, mode = "wb")
 
-raw <- read_excel(tmp, sheet = "Leader Approval Polls")
-
+# raw <- read_excel(tmp, sheet = "Leader Approval Polls")
+library(here)
+raw<-read_excel(path=here("Data/ontario_leader_approval_polls.xlsx"))
 # --- 2. Clean ------------------------------------------------------
 polls <- raw |>
   filter(Pollster == "Abacus Data", Metric == "net impression") |>
@@ -47,7 +48,8 @@ polls <- raw |>
     )
   ) |>
   filter(!is.na(date), !is.na(net), date >= as.Date("2024-01-01")) |>
-  arrange(leader, date)
+  arrange(leader, date) |> 
+  filter(field_end<"2025-03-01")
 
 # --- 3. Direct labels at the end of each series --------------------
 labels <- polls |>
@@ -79,16 +81,16 @@ y_bottom        <- min(polls$net) - 2
 # --- 4. Plot -------------------------------------------------------
 p <- ggplot(polls, aes(x = date, y = net, colour = leader)) +
   geom_hline(yintercept = 0, linewidth = 0.3, colour = "grey55") +
-  geom_vline(xintercept = election_day, linetype = "dashed",
-             colour = "grey40", linewidth = 0.4) +
-  geom_vline(xintercept = resignation_day, linetype = "dotted",
-             colour = "grey40", linewidth = 0.4) +
-  annotate("text", x = election_day, y = y_bottom,
-           label = "Election\nFeb 27, 2025",
-           hjust = 1.05, vjust = 0, size = 3, colour = "grey30") +
-  annotate("text", x = resignation_day, y = y_bottom,
-           label = "Crombie announces\nresignation",
-           hjust = -0.05, vjust = 0, size = 3, colour = "grey30") +
+  # geom_vline(xintercept = election_day, linetype = "dashed",
+  #            colour = "grey40", linewidth = 0.4) +
+  # geom_vline(xintercept = resignation_day, linetype = "dotted",
+  #            colour = "grey40", linewidth = 0.4) +
+  # annotate("text", x = election_day, y = y_bottom,
+  #          label = "Election\nFeb 27, 2025",
+  #          hjust = 1.05, vjust = 0, size = 3, colour = "grey30") +
+  # annotate("text", x = resignation_day, y = y_bottom,
+  #          label = "Crombie announces\nresignation",
+  #          hjust = -0.05, vjust = 0, size = 3, colour = "grey30") +
   geom_line(linewidth = 0.8, alpha = 0.9) +
   geom_point(size = 2.2) +
   geom_text(data = labels,
@@ -96,7 +98,7 @@ p <- ggplot(polls, aes(x = date, y = net, colour = leader)) +
             hjust = -0.15, size = 3.4, fontface = "bold",
             lineheight = 0.9, show.legend = FALSE) +
   scale_colour_manual(values = party_cols, guide = "none") +
-  scale_x_date(breaks = seq(as.Date("2024-01-01"), as.Date("2026-07-01"),
+  scale_x_date(breaks = seq(as.Date("2024-01-01"), as.Date("2025-03-01"),
                             by = "3 months"),
                date_labels = "%b %Y",
                expand = expansion(mult = c(0.02, 0.14))) +
@@ -105,9 +107,7 @@ p <- ggplot(polls, aes(x = date, y = net, colour = leader)) +
     subtitle = "Abacus Data, % positive minus % negative, by survey wave",
     x = NULL, y = "Net impression (points)",
     caption  = paste0(
-      "Abacus Data waves only; month-only field dates placed at mid-month.\n",
-      "Typical wave MOE \u00b1\u22483 pts \u2014 small movements are within noise. ",
-      "Source: sjkiss/2025-Ontario-Election."
+      "Typical wave MOE \u00b1\u22483 percentage points."
     )
   ) +
   theme_minimal(base_size = 12) +
