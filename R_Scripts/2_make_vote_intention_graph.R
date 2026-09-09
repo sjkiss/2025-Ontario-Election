@@ -41,3 +41,4 @@ ggplot(polls, aes(x = `Last Date of Polling`)) +
     plot.title    = element_text(face = "bold"),
     legend.position = "bottom"
   )
+
