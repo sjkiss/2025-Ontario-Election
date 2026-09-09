@@ -1,6 +1,8 @@
 library(ggplot2)
 library(dplyr)
-
+library(here)
+#Run the script that imports the polls
+source(here("R_Scripts/1_import_polls.R"))
 # Ensure data is sorted
 polls <- polls %>%
   arrange(`Last Date of Polling`)
