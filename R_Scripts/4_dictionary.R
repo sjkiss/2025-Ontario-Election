@@ -14,6 +14,44 @@ source("R_Scripts/3_editor&duplicates.R")
 
 # this rewrites df_tokens_on based on the deduped corpus
 df_tokens_on <- df_tokens_on[docnames(df_tokens_on) %in% docnames(df_corp)]
+
+
+## ---- 2. Covariates: clean origin ONCE, properly ----------------------------
+## Canonical key = lowercase, letters only, leading "the" dropped. This absorbs
+## OCR spaces inside words ("Natio nal Post", "The Hamilton Spec tator") that
+## str_squish and hand-typed replace() rules can never keep up with.
+CANON <- c(
+  globeandmail         = "The Globe and Mail",
+  ottawacitizen        = "The Ottawa Citizen",
+  ottawasun            = "The Ottawa Sun",
+  torontostar          = "Toronto Star",
+  torontosun           = "The Toronto Sun",
+  windsorstar          = "The Windsor Star",
+  hamiltonspectator    = "The Hamilton Spectator",
+  spectator            = "The Hamilton Spectator",   # Spectator == Hamilton Spectator
+  nationalpost         = "National Post",
+  saultstar            = "Sault Star",
+  sudburystar          = "Sudbury Star",
+  kingstonwhigstandard = "Kingston Whig-Standard",
+  standard             = "The Standard"              # St. Catharines -- separate paper
+)
+
+docvars(df_tokens_on) <- docvars(df_tokens_on) %>%
+  mutate(
+    raw_origin = str_squish(str_extract(origin, "^[^;(]+")),
+    key    = str_remove(str_to_lower(str_remove_all(raw_origin, "[^A-Za-z]")), "^the"),
+    origin = unname(CANON[key]),
+    origin = replace(origin, is.na(origin), "Other"),
+    ## Set the reference level EXPLICITLY -- otherwise it's whichever level
+    ## your locale happens to sort first, and by_strata_DocTopic breaks.
+    origin = relevel(factor(origin), ref = "Other")
+  )
+
+#Check that the origin manipulation has worked
+docvars(df_tokens_on) %>% 
+  count(origin)
+
+
 # ---- 1. Topic dictionary ------------------------------------------
 topic_dict <- dictionary(list(
   housing = c("housing", "rent", "rents", "renter*", "landlord*",
