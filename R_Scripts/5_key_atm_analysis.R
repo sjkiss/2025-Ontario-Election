@@ -100,20 +100,17 @@ keywords <- list(
 
   post_secondary = c("post-secondary", "post_secondary", "postsecondary", "university",
                      "college", "colleges", "tuition",  
-                     "professor", "opseu", "campus", "universities",
-                     "osap",
-                     "student"),
-  
+                     "professor", "campus", "universities",
+                     "osap"),
   # immigration = c("immigration", "immigrant", "migrant", "refugee",
   #                 "asylum", "newcomer", "deportation", "visa", "immigrants",
   #                 "newcomers"),
-  
   crime = c("crime", "crimes", "criminal", "police", "policing",
             "theft", "shooting", "homicide",
             "murder", "violence", "bail", "carjacking",
-            "gang", "violent", "prison")
-
-
+            "gang", "violent", "prison"),
+  leaders=c("stiles", "ford", "crombie", "schreiner", "approval", 
+            "popular", "unpopular", "approve", "disapprove", "disapproval")
 )
 
 
