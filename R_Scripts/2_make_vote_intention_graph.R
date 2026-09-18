@@ -57,15 +57,16 @@ make_vote_plot <- function(data, title, subtitle) {
 }
 
 # Pre-campaign plot
-plot_precampaign <- make_vote_plot(
+make_vote_plot(
   polls_precampaign,
   title    = "Ontario Vote Intention — Pre-Campaign Period",
   subtitle = "Polling trends by party (before campaign start)"
 )+geom_vline(xintercept=as.Date("2023-12-02"), linetype=2)+
-  geom_text(aes(x=as.Date("2023-04-01"), y=45, 
-                label="Bonnie Crombie elected leader\nof the Liberal Party", hjust=0, size=1))
+  annotate("text",
+           x = as.Date("2023-02-01"), y = 45,
+           label = "Bonnie Crombie elected\nLiberal leader",
+           hjust = 0, size = 4, lineheight=0.8)
 
-plot_precampaign
 # Campaign plot
 plot_campaign <- make_vote_plot(
   polls_campaign,
