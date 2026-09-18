@@ -48,7 +48,10 @@ make_vote_plot <- function(data, title, subtitle) {
       color = "Party",
       caption = "Source: Wikipedia polling aggregate"
     ) +
-    scale_color_manual(values = party_colors) +
+    scale_color_manual(
+      values = party_colors,
+      limits = c("PC", "Liberal", "NDP", "Green")
+    ) +
     theme_minimal(base_size = 13) +
     theme(
       plot.title    = element_text(face = "bold"),
@@ -57,7 +60,7 @@ make_vote_plot <- function(data, title, subtitle) {
 }
 
 # Pre-campaign plot
-make_vote_plot(
+plot_precampaign<-make_vote_plot(
   polls_precampaign,
   title    = "Ontario Vote Intention — Pre-Campaign Period",
   subtitle = "Polling trends by party (before campaign start)"
@@ -67,6 +70,7 @@ make_vote_plot(
            label = "Bonnie Crombie elected\nLiberal leader",
            hjust = 0, size = 4, lineheight=0.8)
 
+precampaign_plot
 # Campaign plot
 plot_campaign <- make_vote_plot(
   polls_campaign,
