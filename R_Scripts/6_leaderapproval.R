@@ -24,7 +24,8 @@ library(here)
 # (there is no separate Positive %/Negative % column — Net is given directly)
 raw <- read_excel(
   path  = here("data/ontario_leader_approval_polls.xlsx"),
-  sheet = "Leader Approval Polls"
+  sheet = "Leader Approval Polls",
+  col_types = "text"
 )
 
 # --- 2. Clean ---------------------------------------------------------
@@ -37,10 +38,12 @@ polls <- raw |>
   ) |>
   mutate(
     date = case_when(
+      str_detect(field_end, "^\\d+(\\.\\d+)?$")       ~ as.Date(as.numeric(field_end), origin = "1899-12-30"),
       str_detect(field_end, "^\\d{4}-\\d{2}-\\d{2}$") ~ ymd(field_end),
       str_detect(field_end, "^\\d{4}-\\d{2}$")        ~ ymd(paste0(field_end, "-15")),
       TRUE                                            ~ as.Date(NA)
     ),
+    net = as.numeric(net),
     leader = factor(
       leader,
       levels = c("Ford", "Crombie", "Stiles", "Fraser (interim Lib)")
