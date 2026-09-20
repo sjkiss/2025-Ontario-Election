@@ -1,27 +1,13 @@
-# ------------------------------------------------------------------
-# Ontario leader approval — Abacus net-impression tracker
-# Jan 2024 – Election Day (Feb 27, 2025)
-# Source: sjkiss/2025-Ontario-Election / ontario_leader_approval_polls.xlsx
-# Design choices:
-#   - Abacus "net impression" only (consistent single-house series)
-#   - Waves connected with lines: no smoothing, so every movement
-#     shown is an actual movement in the data
-#   - Starts Jan 2024, where regular tracking begins (drops the
-#     lone Stiles wave from Mar 2023)
-#   - Ends at the election; direct labels instead of a legend
-# ------------------------------------------------------------------
 
 library(readxl)
 library(dplyr)
 library(stringr)
 library(lubridate)
 library(ggplot2)
+library(ggrepel)
 library(here)
 
 # --- 1. Read cleaned data -------------------------------------------
-# Sheet is "Leader Approval Polls"; columns are:
-# Pollster, Field Start, Field End, Published, Leader, Metric, Net, Notes, Source URL
-# (there is no separate Positive %/Negative % column — Net is given directly)
 raw <- read_excel(
   path  = here("data/ontario_leader_approval_polls.xlsx"),
   sheet = "Leader Approval Polls",
@@ -30,11 +16,15 @@ raw <- read_excel(
 
 # --- 2. Clean ---------------------------------------------------------
 polls <- raw |>
-  filter(Pollster == "Abacus Data", Metric == "net impression") |>
+  filter(
+    (Pollster == "Abacus Data" & Metric == "net impression") |
+      (Pollster == "Angus Reid Institute" & Metric %in% c("net favourability", "net approval"))
+  ) |>
   rename(
     field_end = `Field End`,
     leader    = Leader,
-    net       = Net
+    net       = Net,
+    pollster  = Pollster
   ) |>
   mutate(
     date = case_when(
@@ -47,10 +37,11 @@ polls <- raw |>
     leader = factor(
       leader,
       levels = c("Ford", "Crombie", "Stiles", "Fraser (interim Lib)")
-    )
+    ),
+    pollster = factor(pollster, levels = c("Abacus Data", "Angus Reid Institute"))
   ) |>
   filter(!is.na(date), !is.na(net), date >= as.Date("2024-01-01")) |>
-  arrange(leader, date)
+  arrange(leader, pollster, date)
 
 party_cols <- c(
   "Ford"                 = "#1A4782",
@@ -62,58 +53,75 @@ party_cols <- c(
 election_day <- as.Date("2025-02-27")
 
 # --- Restrict to pre-election period --------------------------------
-polls  <- polls  |> filter(date <= election_day)
-labels <- polls  |>
+polls <- polls |> filter(date <= election_day)
+
+# Direct labels: last wave per leader (across either pollster)
+labels <- polls |>
   group_by(leader) |>
-  slice_max(date, n = 1) |>
+  slice_max(date, n = 1, with_ties = FALSE) |>
   ungroup() |>
   mutate(
-    label   = recode(as.character(leader),
-                     "Fraser (interim Lib)" = "Fraser\n(interim Lib)"),
-    nudge_y = case_when(
-      leader == "Stiles"               ~  1.5,
-      leader == "Fraser (interim Lib)" ~ -1.5,
-      TRUE                              ~ 0
-    )
+    label = recode(as.character(leader),
+                   "Fraser (interim Lib)" = "Fraser (interim Lib)")
   )
 
-y_bottom <- min(polls$net) - 2
+y_top    <- max(polls$net) + 6
+y_bottom <- min(polls$net) - 3
 
 # --- 4. Plot -------------------------------------------------------
-p <- ggplot(polls, aes(x = date, y = net, colour = leader)) +
+p <- ggplot(polls, aes(x = date, y = net, colour = leader, linetype = pollster,
+                       group = interaction(leader, pollster))) +
   geom_hline(yintercept = 0, linewidth = 0.3, colour = "grey55") +
-  geom_vline(xintercept = election_day, linetype = "dashed",
-             colour = "grey40", linewidth = 0.4) +
-  annotate("text", x = election_day, y = y_bottom,
+  geom_vline(xintercept = election_day, linetype = "dotted",
+             colour = "grey45", linewidth = 0.5) +
+  annotate("label", x = election_day, y = y_top,
            label = "Election\nFeb 27, 2025",
-           hjust = 1.05, vjust = 0, size = 3, colour = "grey30") +
-  geom_line(linewidth = 0.8, alpha = 0.9) +
-  geom_point(size = 2.2) +
-  geom_text(data = labels,
-            aes(label = label, y = net + nudge_y),
-            hjust = -0.15, size = 3.4, fontface = "bold",
-            lineheight = 0.9, show.legend = FALSE) +
+           hjust = 1.05, vjust = 1, size = 3.1, colour = "grey25",
+           fill = "white", label.size = 0, label.padding = unit(0.15, "lines")) +
+  geom_line(linewidth = 0.9, alpha = 0.9) +
+  geom_point(size = 2.3) +
+  geom_text_repel(
+    data = labels,
+    aes(label = label),
+    hjust = 0, direction = "y", nudge_x = 18, xlim = c(NA, Inf),
+    segment.color = "grey70", segment.size = 0.3,
+    size = 3.6, fontface = "bold", lineheight = 0.9,
+    min.segment.length = 0, box.padding = 0.3,
+    show.legend = FALSE
+  ) +
   scale_colour_manual(values = party_cols, guide = "none") +
-  scale_x_date(breaks = seq(as.Date("2024-01-01"), election_day,
-                            by = "3 months"),
+  scale_linetype_manual(values = c("Abacus Data" = "solid", "Angus Reid Institute" = "dashed"),
+                        name = "Pollster") +
+  guides(linetype = guide_legend(keywidth = unit(1.8, "cm"))) +
+  scale_x_date(breaks = seq(as.Date("2024-01-01"), election_day, by = "3 months"),
                date_labels = "%b %Y",
-               expand = expansion(mult = c(0.02, 0.14))) +
+               limits = c(as.Date("2024-01-01"), NA),
+               expand = expansion(mult = c(0.02, 0.12))) +
+  scale_y_continuous(expand = expansion(mult = c(0.06, 0.10))) +
+  coord_cartesian(clip = "off") +
   labs(
-    title    = "Net impressions of Ontario party leaders, Jan 2024\u2013Feb 2025",
-    subtitle = "Abacus Data, % positive minus % negative, by survey wave",
-    x = NULL, y = "Net impression (points)",
-    caption  = paste0(
-      "Typical wave MOE \u00b1\u22483 percentage points."
-    )
+    title    = "Net ratings of Ontario party leaders, Jan 2024\u2013Feb 2025",
+    subtitle = "Abacus Data (net impression) & Angus Reid Institute (net favourability/approval), by survey wave",
+    x = NULL, y = "Net rating (points)",
+    caption  = "Typical wave MOE \u00b1\u22483 percentage points."
   ) +
   theme_minimal(base_size = 12) +
   theme(
     plot.title.position = "plot",
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    panel.grid.minor = element_blank()
+    plot.title    = element_text(face = "bold", size = 15, margin = margin(b = 4)),
+    plot.subtitle = element_text(colour = "grey35", size = 10.5, margin = margin(b = 12)),
+    plot.caption  = element_text(colour = "grey45", size = 8.5, margin = margin(t = 10)),
+    axis.text.x   = element_text(angle = 45, hjust = 1),
+    axis.title.y  = element_text(size = 10.5, colour = "grey25"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    legend.position = "bottom",
+    legend.title = element_text(size = 9.5, face = "bold"),
+    legend.text  = element_text(size = 9),
+    plot.margin  = margin(t = 12, r = 55, b = 8, l = 8)
   )
 
 print(p)
 
 ggsave(here("Plots/ontario_leader_net_impressions.png"), p,
-       width = 10, height = 6, dpi = 300)
+       width = 10, height = 6.2, dpi = 300)
