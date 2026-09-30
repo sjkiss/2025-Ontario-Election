@@ -1,0 +1,576 @@
+Topic,Words,Frequency,Timestamp,Name
+-1,"falls, mining, ring, mr, development",2,2023-12-31 13:52:19.200,-1_government_ontario_said_ford
+0,"crombie, liberal, gta, ford, mississauga",4,2023-12-31 13:52:19.200,0_ford_election_tariffs_trump
+1,"gelinas, health, surgery, timely, aggressive",1,2023-12-31 13:52:19.200,1_care_health_hospital_health care
+2,"tax, new, school, government, ontario",1,2023-12-31 13:52:19.200,2_tax_billion_government_ford
+10,"housing, affordable, daycare, price, rent",2,2023-12-31 13:52:19.200,10_housing_homes_affordable_units
+11,"power, electricity, renewable, energy, wind",2,2023-12-31 13:52:19.200,11_energy_power_electricity_gas
+18,"greenbelt, dinner, said, developers, commissioner",2,2023-12-31 13:52:19.200,18_greenbelt_commissioner_rcmp_integrity
+20,"catholic, french, boards, english, unions",1,2023-12-31 13:52:19.200,20_workers_wage_court_public sector
+-1,"mpps, pay, salaries, mpp, makes",1,2024-01-09 10:33:36.000,-1_government_ontario_said_ford
+0,"crombie, fundraising, salary, party, leader",3,2024-01-09 10:33:36.000,0_ford_election_tariffs_trump
+1,"hospitals, hospital, family, health, care",3,2024-01-09 10:33:36.000,1_care_health_hospital_health care
+3,"foreign, students, colleges, student, foreign students",1,2024-01-09 10:33:36.000,3_students_colleges_school_education
+11,"climate, energy, climate change, power, wind",5,2024-01-09 10:33:36.000,11_energy_power_electricity_gas
+16,"studio, amazon, toronto, space, statement toronto",1,2024-01-09 10:33:36.000,16_place_ontario place_therme_ontario
+18,"greenbelt, wake, integrity, commissioner, integrity commissioner",2,2024-01-09 10:33:36.000,18_greenbelt_commissioner_rcmp_integrity
+19,"serviceontario, locations, bags, services, paper",10,2024-01-09 10:33:36.000,19_bags_paper_serviceontario_paper bags
+-1,"harassment, municipal, said, ontario, government",6,2024-01-17 21:07:12.000,-1_government_ontario_said_ford
+0,"gill, milton, riding, minister, party",3,2024-01-17 21:07:12.000,0_ford_election_tariffs_trump
+1,"hospitals, nurses, clinics, health, agencies",3,2024-01-17 21:07:12.000,1_care_health_hospital_health care
+3,"students, student, tuition, international, colleges",7,2024-01-17 21:07:12.000,3_students_colleges_school_education
+4,"convoy, act, jones, emergencies, federal",1,2024-01-17 21:07:12.000,4_encampments_homeless_people_housing
+10,"housing, municipalities, rural, towns, homes",2,2024-01-17 21:07:12.000,10_housing_homes_affordable_units
+11,"renewable, energy, renewable energy, wind, power",1,2024-01-17 21:07:12.000,11_energy_power_electricity_gas
+14,"ndp, caucus, guelph, national post, convention",1,2024-01-17 21:07:12.000,14_arnott_speaker_legislature_wearing
+17,"lrt, mississauga, brampton, metrolinx, loop",1,2024-01-17 21:07:12.000,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, email, commissioner, integrity commissioner, integrity",4,2024-01-17 21:07:12.000,18_greenbelt_commissioner_rcmp_integrity
+-1,"cabinet, letters, information, government, court",10,2024-01-26 07:40:48.000,-1_government_ontario_said_ford
+0,"cent, crombie, party, said, milton",6,2024-01-26 07:40:48.000,0_ford_election_tariffs_trump
+1,"care, health, primary care, doctors, primary",5,2024-01-26 07:40:48.000,1_care_health_hospital_health care
+3,"students, colleges, universities, tuition, international",10,2024-01-26 07:40:48.000,3_students_colleges_school_education
+9,"police, auto, theft, criminal, auto theft",5,2024-01-26 07:40:48.000,9_judges_police_bail_judicial
+10,"housing, toronto, chow, city, budget",2,2024-01-26 07:40:48.000,10_housing_homes_affordable_units
+11,"pickering, nuclear, power, energy, electricity",4,2024-01-26 07:40:48.000,11_energy_power_electricity_gas
+19,"bags, mccarthy, locations, serviceontario, service",2,2024-01-26 07:40:48.000,19_bags_paper_serviceontario_paper bags
+20,"hotel, government said, news conference, niagara falls, expensive",1,2024-01-26 07:40:48.000,20_workers_wage_court_public sector
+21,"mzos, zoning, development, developers, land",3,2024-01-26 07:40:48.000,21_land_development_urban_appeal
+-1,"plates, renewal, plate, motorists, renew",4,2024-02-03 18:14:24.000,-1_government_ontario_said_ford
+0,"ford, crombie, said, ontario, liberal",7,2024-02-03 18:14:24.000,0_ford_election_tariffs_trump
+1,"care, hospital, patients, health, air",5,2024-02-03 18:14:24.000,1_care_health_hospital_health care
+4,"government, legislation, law, court, judicial",1,2024-02-03 18:14:24.000,4_encampments_homeless_people_housing
+6,"tax, beer, inflation, taxes, privatization",2,2024-02-03 18:14:24.000,6_beer_stores_store_alcohol
+10,"problem, housing, high level, magic, government ve",1,2024-02-03 18:14:24.000,10_housing_homes_affordable_units
+11,"hydro, harris, harris government, debt, nuclear",1,2024-02-03 18:14:24.000,11_energy_power_electricity_gas
+15,"carbon, tax, carbon tax, crombie, trudeau",1,2024-02-03 18:14:24.000,15_carbon_tax_carbon tax_crombie
+17,"transit, crosstown, ttc, line, fare",3,2024-02-03 18:14:24.000,17_transit_metrolinx_lrt_crosstown
+20,"wage, court, workers, bargaining, appeal",5,2024-02-03 18:14:24.000,20_workers_wage_court_public sector
+-1,"government, said, environmental, ontario, species",12,2024-02-12 04:48:00.000,-1_government_ontario_said_ford
+0,"ford, conservative, davis, trump, people",5,2024-02-12 04:48:00.000,0_ford_election_tariffs_trump
+1,"care, health, health care, term care, long term",5,2024-02-12 04:48:00.000,1_care_health_hospital_health care
+2,"books, wynne, province, bull, taxpayers",1,2024-02-12 04:48:00.000,2_tax_billion_government_ford
+3,"universities, students, student, international, enrolment",4,2024-02-12 04:48:00.000,3_students_colleges_school_education
+5,"guilbeault, lanes, roads, bike, road",1,2024-02-12 04:48:00.000,5_bike_lanes_bike lanes_traffic
+8,"opioid, sites, health, belleville, consumption",3,2024-02-12 04:48:00.000,8_sites_drug_health_consumption
+9,"halton, police, justice, said, accused",1,2024-02-12 04:48:00.000,9_judges_police_bail_judicial
+13,"407, tunnel, tolls, highway, renewal",2,2024-02-12 04:48:00.000,13_tunnel_highway_401_407
+15,"carbon, carbon tax, tax, crombie, ford",8,2024-02-12 04:48:00.000,15_carbon_tax_carbon tax_crombie
+20,"court, workers, wage, appeal, 124",7,2024-02-12 04:48:00.000,20_workers_wage_court_public sector
+-1,"act, government, legislation, carbon pricing, pricing",5,2024-02-20 15:21:36.000,-1_government_ontario_said_ford
+0,"cent, coletto, ford, said, party",3,2024-02-20 15:21:36.000,0_ford_election_tariffs_trump
+1,"health, care, health care, primary care, patients",6,2024-02-20 15:21:36.000,1_care_health_hospital_health care
+3,"students, tuition, universities, colleges, schools",23,2024-02-20 15:21:36.000,3_students_colleges_school_education
+4,"town, apartment, appointments, flags, pride",1,2024-02-20 15:21:36.000,4_encampments_homeless_people_housing
+8,"mental, mental health, health, said, research",2,2024-02-20 15:21:36.000,8_sites_drug_health_consumption
+9,"judges, appointments, committee, judicial, minded",16,2024-02-20 15:21:36.000,9_judges_police_bail_judicial
+10,"housing, homes, municipalities, new, affordable",5,2024-02-20 15:21:36.000,10_housing_homes_affordable_units
+11,"energy, gas, electricity, board, climate",3,2024-02-20 15:21:36.000,11_energy_power_electricity_gas
+12,"building, legislative, science, science centre, centre",2,2024-02-20 15:21:36.000,12_science_science centre_centre_buildin...
+15,"carbon, carbon tax, tax, crombie, ford",6,2024-02-20 15:21:36.000,15_carbon_tax_carbon tax_crombie
+17,"transit, ttc, fare, riders, program",2,2024-02-20 15:21:36.000,17_transit_metrolinx_lrt_crosstown
+19,"serviceontario, mccarthy, burch, locations, service",1,2024-02-20 15:21:36.000,19_bags_paper_serviceontario_paper bags
+20,"workers, strike, university, wage, court",4,2024-02-20 15:21:36.000,20_workers_wage_court_public sector
+21,"boundary, changes, referendum, urban, environmental",1,2024-02-20 15:21:36.000,21_land_development_urban_appeal
+-1,"women, speak, calandra, day, opportunity",2,2024-02-29 01:55:12.000,-1_government_ontario_said_ford
+0,"milton, liberal, hamid, ford, byelection",10,2024-02-29 01:55:12.000,0_ford_election_tariffs_trump
+1,"patients, care, patient, health, ed",3,2024-02-29 01:55:12.000,1_care_health_hospital_health care
+3,"schools, day, teachers, lecce, school",1,2024-02-29 01:55:12.000,3_students_colleges_school_education
+4,"powers, strong, mayors, strong mayor, municipalities",1,2024-02-29 01:55:12.000,4_encampments_homeless_people_housing
+8,"mental, mental health, health, research, addiction",1,2024-02-29 01:55:12.000,8_sites_drug_health_consumption
+9,"judges, appointments, judicial, justice, committee",13,2024-02-29 01:55:12.000,9_judges_police_bail_judicial
+10,"housing, martin, homes, norfolk, building",2,2024-02-29 01:55:12.000,10_housing_homes_affordable_units
+13,"407, hwy, tolls, hwy 407, highway",2,2024-02-29 01:55:12.000,13_tunnel_highway_401_407
+15,"carbon, carbon tax, tweet facebook, think tweet, facebook don",1,2024-02-29 01:55:12.000,15_carbon_tax_carbon tax_crombie
+20,"workers, public sector, legislation, 124, wage",2,2024-02-29 01:55:12.000,20_workers_wage_court_public sector
+-1,"federal, projects, government, ontario, said",4,2024-03-08 12:28:48.000,-1_government_ontario_said_ford
+0,"poilievre, opportunity, focus, ford, federal",1,2024-03-08 12:28:48.000,0_ford_election_tariffs_trump
+1,"health, care, family, doctor, primary care",11,2024-03-08 12:28:48.000,1_care_health_hospital_health care
+2,"tax, spending, budget, government, taxes",7,2024-03-08 12:28:48.000,2_tax_billion_government_ford
+3,"students, education, trades, labour, skilled trades",1,2024-03-08 12:28:48.000,3_students_colleges_school_education
+7,"lcbo, hornick, union, workers, stores",3,2024-03-08 12:28:48.000,7_lcbo_strike_union_stores
+8,"sites, consumption, funding, safe consumption, consumption sites",1,2024-03-08 12:28:48.000,8_sites_drug_health_consumption
+9,"judges, judicial, lawyers, appointments, ford",15,2024-03-08 12:28:48.000,9_judges_police_bail_judicial
+10,"housing, target, units, welland, st catharines",2,2024-03-08 12:28:48.000,10_housing_homes_affordable_units
+11,"energy, power, electricity, hydro, ontario",4,2024-03-08 12:28:48.000,11_energy_power_electricity_gas
+15,"carbon, tax, carbon tax, federal, ford",2,2024-03-08 12:28:48.000,15_carbon_tax_carbon tax_crombie
+20,"arbitration, teachers, teacher, unions, ended",2,2024-03-08 12:28:48.000,20_workers_wage_court_public sector
+21,"authority, directors, conservation, regulations, changes",1,2024-03-08 12:28:48.000,21_land_development_urban_appeal
+-1,"housing, highway, course, policy, assessment",5,2024-03-16 23:02:24.000,-1_government_ontario_said_ford
+0,"poilievre, cent, coletto, conservative, trudeau",2,2024-03-16 23:02:24.000,0_ford_election_tariffs_trump
+1,"medical, university, school, medical school, vaughan",4,2024-03-16 23:02:24.000,1_care_health_hospital_health care
+2,"tax, government, activities, billion, spending",5,2024-03-16 23:02:24.000,2_tax_billion_government_ford
+3,"universities, funding, students, tuition, schools",2,2024-03-16 23:02:24.000,3_students_colleges_school_education
+4,"nations, police, policing, enforcement, police services",3,2024-03-16 23:02:24.000,4_encampments_homeless_people_housing
+8,"gretzky, health, review, sites, windsor",1,2024-03-16 23:02:24.000,8_sites_drug_health_consumption
+9,"judges, minded, tough, independence, tribunal",3,2024-03-16 23:02:24.000,9_judges_police_bail_judicial
+10,"housing, storey, homes, affordable, building",12,2024-03-16 23:02:24.000,10_housing_homes_affordable_units
+11,"gas, electricity, plants, energy, emissions",1,2024-03-16 23:02:24.000,11_energy_power_electricity_gas
+12,"legislative, building, science, science centre, centre",2,2024-03-16 23:02:24.000,12_science_science centre_centre_buildin...
+15,"carbon, tax, carbon tax, crombie, federal",16,2024-03-16 23:02:24.000,15_carbon_tax_carbon tax_crombie
+16,"ontario place, place, therme, island, ontario",2,2024-03-16 23:02:24.000,16_place_ontario place_therme_ontario
+21,"conservation, wetlands, conservation authority, streams, regulation",1,2024-03-16 23:02:24.000,21_land_development_urban_appeal
+-1,"government, 000, ottawa, ontario, ford",18,2024-03-25 09:36:00.000,-1_government_ontario_said_ford
+0,"ford pc, pc party, caucus, jobs, pc",1,2024-03-25 09:36:00.000,0_ford_election_tariffs_trump
+1,"care, health, health care, funding, million",3,2024-03-25 09:36:00.000,1_care_health_hospital_health care
+2,"budget, tax, bethlenfalvy, billion, year",22,2024-03-25 09:36:00.000,2_tax_billion_government_ford
+3,"students, colleges, international, student, universities",6,2024-03-25 09:36:00.000,3_students_colleges_school_education
+4,"mayor, council, city, parking, housing",2,2024-03-25 09:36:00.000,4_encampments_homeless_people_housing
+9,"judges, appointments, judicial, downey, legal",4,2024-03-25 09:36:00.000,9_judges_police_bail_judicial
+10,"housing, homes, units, density, housing crisis",9,2024-03-25 09:36:00.000,10_housing_homes_affordable_units
+11,"natural gas, natural, gas, heating, new housing",1,2024-03-25 09:36:00.000,11_energy_power_electricity_gas
+15,"carbon, tax, carbon tax, crombie, emissions",4,2024-03-25 09:36:00.000,15_carbon_tax_carbon tax_crombie
+20,"university, york, workers, education, york university",1,2024-03-25 09:36:00.000,20_workers_wage_court_public sector
+-1,"violence, ontario, government, said, 000",13,2024-04-02 20:09:36.000,-1_government_ontario_said_ford
+0,"ford, milton, people, election, liberal",9,2024-04-02 20:09:36.000,0_ford_election_tariffs_trump
+1,"medical, care, school, university, students",13,2024-04-02 20:09:36.000,1_care_health_hospital_health care
+2,"gravy, niagara, budget, ford, billion",6,2024-04-02 20:09:36.000,2_tax_billion_government_ford
+3,"colleges, universities, students, colleges universities, education",2,2024-04-02 20:09:36.000,3_students_colleges_school_education
+4,"ruling, animal, rights, activists, law",2,2024-04-02 20:09:36.000,4_encampments_homeless_people_housing
+8,"consumption, sites, safe consumption, safe, addiction",1,2024-04-02 20:09:36.000,8_sites_drug_health_consumption
+9,"law, quadruple, does apply, said legislature, triple",1,2024-04-02 20:09:36.000,9_judges_police_bail_judicial
+10,"housing, homes, rent, units, new",14,2024-04-02 20:09:36.000,10_housing_homes_affordable_units
+11,"energy, climate, gas, power, building code",2,2024-04-02 20:09:36.000,11_energy_power_electricity_gas
+12,"renovation, surma, science, centre, science centre",2,2024-04-02 20:09:36.000,12_science_science centre_centre_buildin...
+15,"carbon, carbon tax, tax, crombie, queen",3,2024-04-02 20:09:36.000,15_carbon_tax_carbon tax_crombie
+16,"ontario place, place, island, spa, judicial review",1,2024-04-02 20:09:36.000,16_place_ontario place_therme_ontario
+17,"city, million, transit, lrt, ottawa",1,2024-04-02 20:09:36.000,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, email, commissioner, integrity commissioner, integrity",4,2024-04-02 20:09:36.000,18_greenbelt_commissioner_rcmp_integrity
+19,"bags, paper, paper bags, lcbo, plastic",11,2024-04-02 20:09:36.000,19_bags_paper_serviceontario_paper bags
+-1,"highway, government, said, federal, ontario",6,2024-04-11 06:43:12.000,-1_government_ontario_said_ford
+0,"party, ford, ndp, crombie, liberals",8,2024-04-11 06:43:12.000,0_ford_election_tariffs_trump
+1,"hospital, care, term care, long term, term",6,2024-04-11 06:43:12.000,1_care_health_hospital_health care
+2,"tax, income, tax rates, rates, high",1,2024-04-11 06:43:12.000,2_tax_billion_government_ford
+8,"substance, drugs, framework, alcohol, use",2,2024-04-11 06:43:12.000,8_sites_drug_health_consumption
+10,"rental, housing, affordable, homes, landlord",3,2024-04-11 06:43:12.000,10_housing_homes_affordable_units
+11,"power, energy, building code, code, electric",2,2024-04-11 06:43:12.000,11_energy_power_electricity_gas
+14,"arnott, speaker, wearing, political, clothing",10,2024-04-11 06:43:12.000,14_arnott_speaker_legislature_wearing
+15,"carbon, tax, trudeau, carbon tax, housing",1,2024-04-11 06:43:12.000,15_carbon_tax_carbon tax_crombie
+17,"transit, milton, service, express, station",8,2024-04-11 06:43:12.000,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, commissioner, integrity, integrity commissioner, rcmp",2,2024-04-11 06:43:12.000,18_greenbelt_commissioner_rcmp_integrity
+19,"bags, paper, paper bags, plastic, lcbo",4,2024-04-11 06:43:12.000,19_bags_paper_serviceontario_paper bags
+20,"university, students, workers, strike, york university",1,2024-04-11 06:43:12.000,20_workers_wage_court_public sector
+21,"urban, boundary, land, development, appeal",1,2024-04-11 06:43:12.000,21_land_development_urban_appeal
+-1,"honda, battery, ev, said, government",20,2024-04-19 17:16:48.000,-1_government_ontario_said_ford
+0,"cent, crombie, ford, sault, ms crombie",6,2024-04-19 17:16:48.000,0_ford_election_tariffs_trump
+1,"sick, doctors, family, patients, health",4,2024-04-19 17:16:48.000,1_care_health_hospital_health care
+3,"students, teachers, schools, school, university",6,2024-04-19 17:16:48.000,3_students_colleges_school_education
+4,"police, thunder bay, thunder, investigations, bay",2,2024-04-19 17:16:48.000,4_encampments_homeless_people_housing
+9,"police, bail, murder, officer, trial",8,2024-04-19 17:16:48.000,9_judges_police_bail_judicial
+11,"gas, energy, climate, electricity, heat",3,2024-04-19 17:16:48.000,11_energy_power_electricity_gas
+14,"arnott, legislature, speaker, ban, political",15,2024-04-19 17:16:48.000,14_arnott_speaker_legislature_wearing
+17,"rail, transit, station, metrolinx, service",2,2024-04-19 17:16:48.000,17_transit_metrolinx_lrt_crosstown
+-1,"said, highway, teachers, office, ford",8,2024-04-28 03:50:24.000,-1_government_ontario_said_ford
+0,"milton, ford, kent, cent, kent middlesex",7,2024-04-28 03:50:24.000,0_ford_election_tariffs_trump
+1,"doctors, health, care, health care, information",2,2024-04-28 03:50:24.000,1_care_health_hospital_health care
+3,"students, school, teachers, education, lecce",11,2024-04-28 03:50:24.000,3_students_colleges_school_education
+4,"nations, laws, community, policing, safe",2,2024-04-28 03:50:24.000,4_encampments_homeless_people_housing
+8,"drugs, drug, health, toronto, sites",3,2024-04-28 03:50:24.000,8_sites_drug_health_consumption
+9,"committee, judges, appointment, justice, judicial",4,2024-04-28 03:50:24.000,9_judges_police_bail_judicial
+10,"housing, affordable, homes, house, federal",2,2024-04-28 03:50:24.000,10_housing_homes_affordable_units
+14,"arnott, speaker, legislature, ndp, ban",10,2024-04-28 03:50:24.000,14_arnott_speaker_legislature_wearing
+19,"bags, plastic, bag, paper, use",2,2024-04-28 03:50:24.000,19_bags_paper_serviceontario_paper bags
+21,"mzo, cn, land, development, housing",1,2024-04-28 03:50:24.000,21_land_development_urban_appeal
+-1,"said, peel, government, niagara, plant",5,2024-05-06 14:24:00.000,-1_government_ontario_said_ford
+0,"crombie, said, ford, crombie said, election",6,2024-05-06 14:24:00.000,0_ford_election_tariffs_trump
+1,"hospital, care, caregivers, nursing, patients",3,2024-05-06 14:24:00.000,1_care_health_hospital_health care
+3,"students, university, universities, school, schools",7,2024-05-06 14:24:00.000,3_students_colleges_school_education
+4,"law, animal, justice, animals, charter",1,2024-05-06 14:24:00.000,4_encampments_homeless_people_housing
+8,"impaired, driving, impaired driving, sarkaria, driver",1,2024-05-06 14:24:00.000,8_sites_drug_health_consumption
+9,"theft, auto, car, stolen, auto theft",2,2024-05-06 14:24:00.000,9_judges_police_bail_judicial
+10,"housing, affordable, fraser, aggressive, federal",3,2024-05-06 14:24:00.000,10_housing_homes_affordable_units
+11,"gas, plants, energy, electricity, battery",1,2024-05-06 14:24:00.000,11_energy_power_electricity_gas
+14,"arnott, speaker, ban, wearing, legislature",5,2024-05-06 14:24:00.000,14_arnott_speaker_legislature_wearing
+18,"greenbelt, premier office, office, involved, premier",2,2024-05-06 14:24:00.000,18_greenbelt_commissioner_rcmp_integrity
+20,"workers, cupe, sector, members, wage",1,2024-05-06 14:24:00.000,20_workers_wage_court_public sector
+-1,"labour, fife, assault, poilievre, cases",2,2024-05-15 00:57:36.000,-1_government_ontario_said_ford
+0,"cent, ford, party, liberals, election",4,2024-05-15 00:57:36.000,0_ford_election_tariffs_trump
+1,"care, health, health care, government, nurses",4,2024-05-15 00:57:36.000,1_care_health_hospital_health care
+2,"spending, trudeau, tax, trudeau government, government",1,2024-05-15 00:57:36.000,2_tax_billion_government_ford
+3,"school, students, student, education, high school",1,2024-05-15 00:57:36.000,3_students_colleges_school_education
+8,"sites, drug, health, drugs, consumption",10,2024-05-15 00:57:36.000,8_sites_drug_health_consumption
+11,"gas, energy, natural, natural gas, wasted",1,2024-05-15 00:57:36.000,11_energy_power_electricity_gas
+16,"ontario place, site, place, ontario, surma",2,2024-05-15 00:57:36.000,16_place_ontario place_therme_ontario
+17,"express, metrolinx, documents, train, reversal",1,2024-05-15 00:57:36.000,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, meeting, office, rcmp, involved",2,2024-05-15 00:57:36.000,18_greenbelt_commissioner_rcmp_integrity
+19,"serviceontario, locations, bags, partnership, paper",3,2024-05-15 00:57:36.000,19_bags_paper_serviceontario_paper bags
+20,"heat, workers, employers, stress, tabuns",3,2024-05-15 00:57:36.000,20_workers_wage_court_public sector
+21,"airport, land, pickering, greenbelt, mzo",2,2024-05-15 00:57:36.000,21_land_development_urban_appeal
+-1,"hydro, million, stores, fee, crombie",4,2024-05-23 11:31:12.000,-1_government_ontario_said_ford
+0,"election, ford, early, early election, language",10,2024-05-23 11:31:12.000,0_ford_election_tariffs_trump
+1,"plan, haven, sign, signed, care",1,2024-05-23 11:31:12.000,1_care_health_hospital_health care
+2,"debt, budget, manitoba, billion, balanced",3,2024-05-23 11:31:12.000,2_tax_billion_government_ford
+3,"school, shooting, said, students, schools",7,2024-05-23 11:31:12.000,3_students_colleges_school_education
+6,"beer, stores, store, beer store, million",28,2024-05-23 11:31:12.000,6_beer_stores_store_alcohol
+8,"safer, sites, supply, drug, drugs",5,2024-05-23 11:31:12.000,8_sites_drug_health_consumption
+9,"brother, ontario, jails, justice, death",1,2024-05-23 11:31:12.000,9_judges_police_bail_judicial
+10,"housing, homes, heritage, units, retirement",5,2024-05-23 11:31:12.000,10_housing_homes_affordable_units
+14,"statement, legislature, court, decision, courts",2,2024-05-23 11:31:12.000,14_arnott_speaker_legislature_wearing
+17,"express, metrolinx, documents, train, reversal",1,2024-05-23 11:31:12.000,17_transit_metrolinx_lrt_crosstown
+18,"commissioner, greenbelt, integrity commissioner, integrity, privacy",6,2024-05-23 11:31:12.000,18_greenbelt_commissioner_rcmp_integrity
+20,"court, strike, right, decision, ttc",1,2024-05-23 11:31:12.000,20_workers_wage_court_public sector
+21,"airport, pickering, land, mzo, greenbelt",1,2024-05-23 11:31:12.000,21_land_development_urban_appeal
+-1,"stores, government, crombie, said, fee",9,2024-05-31 22:04:48.000,-1_government_ontario_said_ford
+0,"ford, mississauga, said, ontario, election",4,2024-05-31 22:04:48.000,0_ford_election_tariffs_trump
+1,"care, hospital, health, muskoka, clinics",12,2024-05-31 22:04:48.000,1_care_health_hospital_health care
+2,"subsidy, bethlenfalvy, million, vote, government",2,2024-05-31 22:04:48.000,2_tax_billion_government_ford
+3,"education, students, minister, school, lecce",23,2024-05-31 22:04:48.000,3_students_colleges_school_education
+6,"beer, stores, store, beer store, corner",16,2024-05-31 22:04:48.000,6_beer_stores_store_alcohol
+10,"housing, income, affordable, homes, federal",2,2024-05-31 22:04:48.000,10_housing_homes_affordable_units
+19,"locations, serviceontario, bags, bowman, government",4,2024-05-31 22:04:48.000,19_bags_paper_serviceontario_paper bags
+20,"ttc, workers, strike, union, legislation",2,2024-05-31 22:04:48.000,20_workers_wage_court_public sector
+-1,"said, cabinet, greenbelt, government, harassment",4,2024-06-09 08:38:24.000,-1_government_ontario_said_ford
+0,"tourism, niagara, sorry, stevens, ford",6,2024-06-09 08:38:24.000,0_ford_election_tariffs_trump
+1,"care, wastewater, health, hospital, covid",5,2024-06-09 08:38:24.000,1_care_health_hospital_health care
+2,"digital, wallets, government, cards, privacy",2,2024-06-09 08:38:24.000,2_tax_billion_government_ford
+3,"students, school, university, guelph, schools",5,2024-06-09 08:38:24.000,3_students_colleges_school_education
+6,"beer, store, stores, beer store, sales",4,2024-06-09 08:38:24.000,6_beer_stores_store_alcohol
+7,"lcbo, workers, union, stores, strike",4,2024-06-09 08:38:24.000,7_lcbo_strike_union_stores
+9,"jails, capacity, cent capacity, detention, jail",1,2024-06-09 08:38:24.000,9_judges_police_bail_judicial
+10,"housing, mayor, city, mississauga, rent",1,2024-06-09 08:38:24.000,10_housing_homes_affordable_units
+11,"energy, plants, gas, lecce, electricity",3,2024-06-09 08:38:24.000,11_energy_power_electricity_gas
+12,"legislative, science, building, centre, science centre",2,2024-06-09 08:38:24.000,12_science_science centre_centre_buildin...
+13,"chicago, highway, gardiner, traffic, don valley",2,2024-06-09 08:38:24.000,13_tunnel_highway_401_407
+15,"carbon, tax, carbon tax, levy, crombie",2,2024-06-09 08:38:24.000,15_carbon_tax_carbon tax_crombie
+16,"ontario place, place, business case, therme, ontario",3,2024-06-09 08:38:24.000,16_place_ontario place_therme_ontario
+-1,"violence, plates, said, licence, government",6,2024-06-17 19:12:00.000,-1_government_ontario_said_ford
+0,"tariffs, ford, election, china, said",11,2024-06-17 19:12:00.000,0_ford_election_tariffs_trump
+1,"registry, lives, heart, save, save lives",1,2024-06-17 19:12:00.000,1_care_health_hospital_health care
+2,"digital, wallets, government, policy, said",1,2024-06-17 19:12:00.000,2_tax_billion_government_ford
+3,"students, school, financial, requirement, teachers",2,2024-06-17 19:12:00.000,3_students_colleges_school_education
+6,"kenora, beer, bottle, alcohol, store",3,2024-06-17 19:12:00.000,6_beer_stores_store_alcohol
+7,"lcbo, union, strike, opseu, workers",5,2024-06-17 19:12:00.000,7_lcbo_strike_union_stores
+8,"alcohol, sites, consumption, drug, health",3,2024-06-17 19:12:00.000,8_sites_drug_health_consumption
+9,"jails, complaints, jail, report, cases",1,2024-06-17 19:12:00.000,9_judges_police_bail_judicial
+10,"housing, building faster, faster fund, municipalities, homes built",2,2024-06-17 19:12:00.000,10_housing_homes_affordable_units
+12,"science, science centre, centre, building, roof",21,2024-06-17 19:12:00.000,12_science_science centre_centre_buildin...
+20,"older, workers, injured, seniors, workplace safety",1,2024-06-17 19:12:00.000,20_workers_wage_court_public sector
+21,"inventory, authority, conservation authority, conservation, parcels",1,2024-06-17 19:12:00.000,21_land_development_urban_appeal
+-1,"advertising, government, ontario, news, journalism",30,2024-06-26 05:45:36.000,-1_government_ontario_said_ford
+0,"cent, election, neutral, rating, happy",3,2024-06-26 05:45:36.000,0_ford_election_tariffs_trump
+1,"macdonald, care, health, client, service",3,2024-06-26 05:45:36.000,1_care_health_hospital_health care
+7,"lcbo, strike, stores, opseu, workers",1,2024-06-26 05:45:36.000,7_lcbo_strike_union_stores
+8,"mental health, mental, support, police, health",1,2024-06-26 05:45:36.000,8_sites_drug_health_consumption
+9,"jails, complaints, jail, report, cases",1,2024-06-26 05:45:36.000,9_judges_police_bail_judicial
+10,"housing, units, development, housing affordability, market",1,2024-06-26 05:45:36.000,10_housing_homes_affordable_units
+12,"science, science centre, centre, building, roof",15,2024-06-26 05:45:36.000,12_science_science centre_centre_buildin...
+14,"mpp, ndp, choice, oosterhoff, arnott",1,2024-06-26 05:45:36.000,14_arnott_speaker_legislature_wearing
+16,"place, ontario place, ontario, live, site",2,2024-06-26 05:45:36.000,16_place_ontario place_therme_ontario
+21,"grimsby, planning, land, official plan, development",1,2024-06-26 05:45:36.000,21_land_development_urban_appeal
+-1,"heat, ontario, mining, workers, claims",10,2024-07-04 16:19:12.000,-1_government_ontario_said_ford
+0,"tax cuts, cuts, tax, wealth, privatization",3,2024-07-04 16:19:12.000,0_ford_election_tariffs_trump
+1,"increased, savings, blame, revenues, lost",1,2024-07-04 16:19:12.000,1_care_health_hospital_health care
+6,"beer, alcohol, stores, lcbo, store",5,2024-07-04 16:19:12.000,6_beer_stores_store_alcohol
+7,"lcbo, strike, union, stores, opseu",54,2024-07-04 16:19:12.000,7_lcbo_strike_union_stores
+11,"power, energy, electric, electricity, government",3,2024-07-04 16:19:12.000,11_energy_power_electricity_gas
+12,"science, science centre, centre, building, ontario science",13,2024-07-04 16:19:12.000,12_science_science centre_centre_buildin...
+16,"ontario place, place, ontario, hearing, organizations including",1,2024-07-04 16:19:12.000,16_place_ontario place_therme_ontario
+21,"boundary, urban boundary, urban, hamilton, tribunal",1,2024-07-04 16:19:12.000,21_land_development_urban_appeal
+-1,"ontario, news, content, advertising, corporations",9,2024-07-13 02:52:48.000,-1_government_ontario_said_ford
+0,"ford, election, federal, ontario, said",7,2024-07-13 02:52:48.000,0_ford_election_tariffs_trump
+1,"premiers, energy, care, patients, health",1,2024-07-13 02:52:48.000,1_care_health_hospital_health care
+4,"asylum, ford said, said, federal government, federal",2,2024-07-13 02:52:48.000,4_encampments_homeless_people_housing
+6,"stores, beer, alcohol, grocery, store",6,2024-07-13 02:52:48.000,6_beer_stores_store_alcohol
+7,"lcbo, strike, union, stores, opseu",33,2024-07-13 02:52:48.000,7_lcbo_strike_union_stores
+8,"drug, drugs, canada, market, patients",1,2024-07-13 02:52:48.000,8_sites_drug_health_consumption
+10,"apartment, housing, affordable, minimum wage, rent",1,2024-07-13 02:52:48.000,10_housing_homes_affordable_units
+11,"pipeline, gas, energy, project, greenhouse",1,2024-07-13 02:52:48.000,11_energy_power_electricity_gas
+12,"science, centre, science centre, city, said",2,2024-07-13 02:52:48.000,12_science_science centre_centre_buildin...
+16,"recreation, centre, place, space, community",1,2024-07-13 02:52:48.000,16_place_ontario place_therme_ontario
+-1,"government, said, advertising, ontario, ford",9,2024-07-21 13:26:24.000,-1_government_ontario_said_ford
+0,"boundaries, ford, electoral, election, federal",9,2024-07-21 13:26:24.000,0_ford_election_tariffs_trump
+1,"clinics, care, health, private, government",1,2024-07-21 13:26:24.000,1_care_health_hospital_health care
+2,"tax, hst, debt, brunswick, new brunswick",2,2024-07-21 13:26:24.000,2_tax_billion_government_ford
+4,"powers, mayor, strong mayor, mayor powers, strong",4,2024-07-21 13:26:24.000,4_encampments_homeless_people_housing
+6,"travelled, liquor, alcohol, glorified, netherlands",1,2024-07-21 13:26:24.000,6_beer_stores_store_alcohol
+7,"lcbo, strike, opseu, cent, stores",13,2024-07-21 13:26:24.000,7_lcbo_strike_union_stores
+9,"police, theft, auto, judges, lawyers",6,2024-07-21 13:26:24.000,9_judges_police_bail_judicial
+10,"bank, bank canada, rates, housing, canada",2,2024-07-21 13:26:24.000,10_housing_homes_affordable_units
+11,"energy, electricity, nuclear, clean, clean energy",1,2024-07-21 13:26:24.000,11_energy_power_electricity_gas
+13,"construction, celebration, year earlier, gardiner, tunnel",1,2024-07-21 13:26:24.000,13_tunnel_highway_401_407
+14,"statement, oct, lawyer, ndp, israel",1,2024-07-21 13:26:24.000,14_arnott_speaker_legislature_wearing
+15,"crombie, carbon, provincial responsibilities, provincial, housing homelessness",1,2024-07-21 13:26:24.000,15_carbon_tax_carbon tax_crombie
+16,"place, ontario place, exhibition, parking, underground",6,2024-07-21 13:26:24.000,16_place_ontario place_therme_ontario
+20,"officers, court, deal, law, workers",1,2024-07-21 13:26:24.000,20_workers_wage_court_public sector
+-1,"stage, assessment, said, government, 000",3,2024-07-30 00:00:00.000,-1_government_ontario_said_ford
+0,"boundaries, electoral, ford, election, ontario",8,2024-07-30 00:00:00.000,0_ford_election_tariffs_trump
+1,"wastewater, surveillance, health, testing, program",2,2024-07-30 00:00:00.000,1_care_health_hospital_health care
+2,"spending, wynne, government, highest, person",1,2024-07-30 00:00:00.000,2_tax_billion_government_ford
+9,"police, bail, judges, ford, said",8,2024-07-30 00:00:00.000,9_judges_police_bail_judicial
+14,"statement, oct, lawyer, ndp, israel",1,2024-07-30 00:00:00.000,14_arnott_speaker_legislature_wearing
+17,"metrolinx, date, transit, crosstown, opening date",2,2024-07-30 00:00:00.000,17_transit_metrolinx_lrt_crosstown
+21,"appeal, appeals, development, group, planning",3,2024-07-30 00:00:00.000,21_land_development_urban_appeal
+-1,"arbitration, woman, caucus, ndp, mining",4,2024-08-07 10:33:36.000,-1_government_ontario_said_ford
+0,"firm, ontario, contract, ford, counsel",2,2024-08-07 10:33:36.000,0_ford_election_tariffs_trump
+1,"health, hospital, care, health care, said",4,2024-08-07 10:33:36.000,1_care_health_hospital_health care
+2,"government, spending, ford government, fiscally, budget",3,2024-08-07 10:33:36.000,2_tax_billion_government_ford
+6,"licensed, stores, store, beer, alcohol",4,2024-08-07 10:33:36.000,6_beer_stores_store_alcohol
+8,"addiction, mental health, mental, sites, health",1,2024-08-07 10:33:36.000,8_sites_drug_health_consumption
+9,"bail, judges, accountability, judicial, courts",2,2024-08-07 10:33:36.000,9_judges_police_bail_judicial
+10,"housing, year, homes, new, cent",2,2024-08-07 10:33:36.000,10_housing_homes_affordable_units
+16,"place, ontario place, therme, waterpark, spa",1,2024-08-07 10:33:36.000,16_place_ontario place_therme_ontario
+18,"greenbelt, rcmp, land, investigation, ford",8,2024-08-07 10:33:36.000,18_greenbelt_commissioner_rcmp_integrity
+21,"land, region, development, council, farmland",2,2024-08-07 10:33:36.000,21_land_development_urban_appeal
+-1,"said, government, ontario, child care, child",6,2024-08-15 21:07:12.000,-1_government_ontario_said_ford
+0,"election, ford, party, early, ontario",5,2024-08-15 21:07:12.000,0_ford_election_tariffs_trump
+1,"health, care, health care, ontario, hospital",8,2024-08-15 21:07:12.000,1_care_health_hospital_health care
+2,"tax, cut, gas tax, tax cut, gas",3,2024-08-15 21:07:12.000,2_tax_billion_government_ford
+3,"cabinet, smith, education, minister, students",9,2024-08-15 21:07:12.000,3_students_colleges_school_education
+4,"homelessness, farm, animals, animal, farming",3,2024-08-15 21:07:12.000,4_encampments_homeless_people_housing
+8,"sites, consumption, drug, health, treatment",22,2024-08-15 21:07:12.000,8_sites_drug_health_consumption
+10,"housing, homes, calandra, development, density",4,2024-08-15 21:07:12.000,10_housing_homes_affordable_units
+14,"hahn, piccini, cupe, israel, comments",2,2024-08-15 21:07:12.000,14_arnott_speaker_legislature_wearing
+18,"greenbelt, rcmp, ford, beach, summer",3,2024-08-15 21:07:12.000,18_greenbelt_commissioner_rcmp_integrity
+21,"urban, boundary, city, expansion, development",1,2024-08-15 21:07:12.000,21_land_development_urban_appeal
+-1,"child, death, children, taylor, mother",1,2024-08-24 07:40:48.000,-1_government_ontario_said_ford
+0,"said, cent, ford, cent said, election",8,2024-08-24 07:40:48.000,0_ford_election_tariffs_trump
+2,"debt, billion, budget, taxpayers, government",3,2024-08-24 07:40:48.000,2_tax_billion_government_ford
+3,"education, students, school, greater, colleges",2,2024-08-24 07:40:48.000,3_students_colleges_school_education
+4,"homelessness, mental health, mental, health addictions, catharines",1,2024-08-24 07:40:48.000,4_encampments_homeless_people_housing
+6,"beer, stores, alcohol, convenience, cocktails",2,2024-08-24 07:40:48.000,6_beer_stores_store_alcohol
+8,"sites, safe, drug, consumption, treatment",12,2024-08-24 07:40:48.000,8_sites_drug_health_consumption
+11,"energy, electricity, lecce, power, projects",4,2024-08-24 07:40:48.000,11_energy_power_electricity_gas
+17,"metrolinx, express, changes, train, airport",1,2024-08-24 07:40:48.000,17_transit_metrolinx_lrt_crosstown
+-1,"strip, robinson, children, youth, facilities",3,2024-09-01 18:14:24.000,-1_government_ontario_said_ford
+0,"ford, election, singh, pension, premier",6,2024-09-01 18:14:24.000,0_ford_election_tariffs_trump
+1,"hospital, care, beds, health, hospitals",3,2024-09-01 18:14:24.000,1_care_health_hospital_health care
+2,"bethlenfalvy, billion, spending, debt, year",2,2024-09-01 18:14:24.000,2_tax_billion_government_ford
+4,"penned, hunting, dogs, dog, disease",2,2024-09-01 18:14:24.000,4_encampments_homeless_people_housing
+6,"beer, stores, alcohol, store, convenience",12,2024-09-01 18:14:24.000,6_beer_stores_store_alcohol
+8,"sites, consumption, drug, addiction, treatment",9,2024-09-01 18:14:24.000,8_sites_drug_health_consumption
+9,"cameras, police, automated, drivers, tickets",2,2024-09-01 18:14:24.000,9_judges_police_bail_judicial
+-1,"child, women, mother, trades, care",9,2024-09-10 04:48:00.000,-1_government_ontario_said_ford
+0,"party, liberals, leadership, liberal, crombie",2,2024-09-10 04:48:00.000,0_ford_election_tariffs_trump
+1,"hospital, care, property, term care, long term",4,2024-09-10 04:48:00.000,1_care_health_hospital_health care
+2,"pension, money, politicians, ford, singh",2,2024-09-10 04:48:00.000,2_tax_billion_government_ford
+3,"schools, colleges, college, education, activities",4,2024-09-10 04:48:00.000,3_students_colleges_school_education
+4,"penned, dog, hunting, expand, horrific",1,2024-09-10 04:48:00.000,4_encampments_homeless_people_housing
+6,"beer, stores, store, convenience, wine",7,2024-09-10 04:48:00.000,6_beer_stores_store_alcohol
+9,"erie, fort, police, bail, company",3,2024-09-10 04:48:00.000,9_judges_police_bail_judicial
+10,"orders, housing built, housing, aimed, democratic",1,2024-09-10 04:48:00.000,10_housing_homes_affordable_units
+11,"energy, gas, plant, wind, power",3,2024-09-10 04:48:00.000,11_energy_power_electricity_gas
+12,"science centre, science, centre, building, said",2,2024-09-10 04:48:00.000,12_science_science centre_centre_buildin...
+17,"transit, ottawa, subsidies, ttc, lrt",1,2024-09-10 04:48:00.000,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, infrastructure, government, projects, commissioner",1,2024-09-10 04:48:00.000,18_greenbelt_commissioner_rcmp_integrity
+21,"land, farmland, says, agricultural, development",1,2024-09-10 04:48:00.000,21_land_development_urban_appeal
+-1,"route, government, subway, ontario, new",8,2024-09-18 15:21:36.000,-1_government_ontario_said_ford
+0,"election, party, ford, crombie, liberals",13,2024-09-18 15:21:36.000,0_ford_election_tariffs_trump
+1,"hospital, patients, care, beds, health",4,2024-09-18 15:21:36.000,1_care_health_hospital_health care
+2,"spending, tax, billion, taxes, fiscal",7,2024-09-18 15:21:36.000,2_tax_billion_government_ford
+3,"students, school, board, teachers, education",11,2024-09-18 15:21:36.000,3_students_colleges_school_education
+4,"people, homeless, housing, encampments, homelessness",7,2024-09-18 15:21:36.000,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, traffic, cyclists",24,2024-09-18 15:21:36.000,5_bike_lanes_bike lanes_traffic
+8,"alcohol, related, health, deaths, public health",1,2024-09-18 15:21:36.000,8_sites_drug_health_consumption
+10,"housing, housing starts, starts, report, new",2,2024-09-18 15:21:36.000,10_housing_homes_affordable_units
+13,"tunnel, highway, 401, traffic, feasibility",16,2024-09-18 15:21:36.000,13_tunnel_highway_401_407
+14,"ndp, candidate, stiles, hamilton, caucus",2,2024-09-18 15:21:36.000,14_arnott_speaker_legislature_wearing
+20,"wage, workers, minimum, minimum wage, wages",1,2024-09-18 15:21:36.000,20_workers_wage_court_public sector
+21,"region, waterloo, land, landowners, waterloo region",1,2024-09-18 15:21:36.000,21_land_development_urban_appeal
+-1,"children, child, complex, welfare, needs",12,2024-09-27 01:55:12.000,-1_government_ontario_said_ford
+0,"ndp, liberals, voters, poll, ford",6,2024-09-27 01:55:12.000,0_ford_election_tariffs_trump
+1,"health care, care, health, private, public",3,2024-09-27 01:55:12.000,1_care_health_hospital_health care
+2,"tax, crombie, government, taxes, money",3,2024-09-27 01:55:12.000,2_tax_billion_government_ford
+3,"holiday, schools, students, reconciliation, day",2,2024-09-27 01:55:12.000,3_students_colleges_school_education
+4,"encampments, homeless, parks, housing, shelters",3,2024-09-27 01:55:12.000,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, lane, road",2,2024-09-27 01:55:12.000,5_bike_lanes_bike lanes_traffic
+8,"sites, injection, exemption, drug, health",2,2024-09-27 01:55:12.000,8_sites_drug_health_consumption
+13,"tunnel, highway, 401, 407, traffic",21,2024-09-27 01:55:12.000,13_tunnel_highway_401_407
+16,"therme, ontario place, place, lease, spa",7,2024-09-27 01:55:12.000,16_place_ontario place_therme_ontario
+17,"lrt, eglinton, metrolinx, transit, line",1,2024-09-27 01:55:12.000,17_transit_metrolinx_lrt_crosstown
+20,"ontario works, inflation, deeper, living, works",2,2024-09-27 01:55:12.000,20_workers_wage_court_public sector
+21,"farmers, land, region, farmland, said",4,2024-09-27 01:55:12.000,21_land_development_urban_appeal
+-1,"children, aid, agencies, audit, child",4,2024-10-05 12:28:48.000,-1_government_ontario_said_ford
+0,"party, ford, ms, ms crombie, crombie",5,2024-10-05 12:28:48.000,0_ford_election_tariffs_trump
+1,"niagara, care, hospital, health, welland",1,2024-10-05 12:28:48.000,1_care_health_hospital_health care
+5,"lanes, bike, bike lanes, mayor, bloor",1,2024-10-05 12:28:48.000,5_bike_lanes_bike lanes_traffic
+6,"wine, official, government official, senior government, stores",1,2024-10-05 12:28:48.000,6_beer_stores_store_alcohol
+9,"police, theft, help, toronto, rushowy",2,2024-10-05 12:28:48.000,9_judges_police_bail_judicial
+12,"science, tree, science centre, centre, trees",4,2024-10-05 12:28:48.000,12_science_science centre_centre_buildin...
+13,"tunnel, highway, 401, highway 401, idea",6,2024-10-05 12:28:48.000,13_tunnel_highway_401_407
+16,"place, ontario place, therme, ontario, channel",3,2024-10-05 12:28:48.000,16_place_ontario place_therme_ontario
+17,"mount, metrolinx, trees, said, parkland",1,2024-10-05 12:28:48.000,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, rcmp, land, wake, premier",4,2024-10-05 12:28:48.000,18_greenbelt_commissioner_rcmp_integrity
+-1,"highway, 413, said, highway 413, government",8,2024-10-13 23:02:24.000,-1_government_ontario_said_ford
+0,"councillor, city, city councillor, ottawa, moved",2,2024-10-13 23:02:24.000,0_ford_election_tariffs_trump
+1,"care, health, dr, philpott, health care",7,2024-10-13 23:02:24.000,1_care_health_hospital_health care
+2,"tax, ford, 200, political, money",15,2024-10-13 23:02:24.000,2_tax_billion_government_ford
+3,"students, student, colleges, international, universities",2,2024-10-13 23:02:24.000,3_students_colleges_school_education
+4,"cent, encampments, cent said, doing, homeless",4,2024-10-13 23:02:24.000,4_encampments_homeless_people_housing
+5,"lanes, bike, bike lanes, traffic, transportation",22,2024-10-13 23:02:24.000,5_bike_lanes_bike lanes_traffic
+6,"grocers, beer, grocery, store, independent",2,2024-10-13 23:02:24.000,6_beer_stores_store_alcohol
+8,"sites, treatment, drug, health, safe",3,2024-10-13 23:02:24.000,8_sites_drug_health_consumption
+10,"housing, heritage, city, mississauga, municipalities",1,2024-10-13 23:02:24.000,10_housing_homes_affordable_units
+11,"energy, electricity, power, nuclear, climate",8,2024-10-13 23:02:24.000,11_energy_power_electricity_gas
+16,"place, ontario place, therme, vegas, ontario",7,2024-10-13 23:02:24.000,16_place_ontario place_therme_ontario
+-1,"agencies, child, government, protection, ontario",5,2024-10-22 09:36:00.000,-1_government_ontario_said_ford
+0,"trap, paper bags, watch, paper, bags",2,2024-10-22 09:36:00.000,0_ford_election_tariffs_trump
+1,"students, medical, care, family, health",12,2024-10-22 09:36:00.000,1_care_health_hospital_health care
+2,"tax, billion, government, 200, ford",32,2024-10-22 09:36:00.000,2_tax_billion_government_ford
+4,"mayors, clause, notwithstanding clause, notwithstanding, homeless",3,2024-10-22 09:36:00.000,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, traffic, lane",17,2024-10-22 09:36:00.000,5_bike_lanes_bike lanes_traffic
+6,"grocers, beer, grocery, store, stores",3,2024-10-22 09:36:00.000,6_beer_stores_store_alcohol
+9,"jail, detention, said, prison, ministry",2,2024-10-22 09:36:00.000,9_judges_police_bail_judicial
+10,"housing, water, sudbury, wastewater, city greater",1,2024-10-22 09:36:00.000,10_housing_homes_affordable_units
+11,"energy, nuclear, climate, electricity, power",3,2024-10-22 09:36:00.000,11_energy_power_electricity_gas
+12,"centre, science, science centre, location, building",1,2024-10-22 09:36:00.000,12_science_science centre_centre_buildin...
+13,"highway, 407, highway 407, tolls, tolls highway",1,2024-10-22 09:36:00.000,13_tunnel_highway_401_407
+14,"independent, stiles, caucus, mpp, ndp",2,2024-10-22 09:36:00.000,14_arnott_speaker_legislature_wearing
+16,"cho, park, niagara, region, place",1,2024-10-22 09:36:00.000,16_place_ontario place_therme_ontario
+19,"bags, lcbo, paper, paper bags, plastic",5,2024-10-22 09:36:00.000,19_bags_paper_serviceontario_paper bags
+-1,"children, said, sutcliffe, government, ford",8,2024-10-30 20:09:36.000,-1_government_ontario_said_ford
+0,"trade, canada, states, trump, said",4,2024-10-30 20:09:36.000,0_ford_election_tariffs_trump
+1,"medical, care, school, students, health",15,2024-10-30 20:09:36.000,1_care_health_hospital_health care
+2,"tax, billion, government, budget, 200",28,2024-10-30 20:09:36.000,2_tax_billion_government_ford
+3,"board, school, education, boards, trip",6,2024-10-30 20:09:36.000,3_students_colleges_school_education
+4,"encampments, clause, notwithstanding clause, notwithstanding, mayors",9,2024-10-30 20:09:36.000,4_encampments_homeless_people_housing
+5,"lanes, bike, bike lanes, cent, traffic",12,2024-10-30 20:09:36.000,5_bike_lanes_bike lanes_traffic
+6,"stores, beer, alcohol, wine, retail",5,2024-10-30 20:09:36.000,6_beer_stores_store_alcohol
+8,"enter, killed, mother, break, police",1,2024-10-30 20:09:36.000,8_sites_drug_health_consumption
+9,"police service, police, appointments, kerzner, municipal",1,2024-10-30 20:09:36.000,9_judges_police_bail_judicial
+10,"housing, homes, building, target, rates",2,2024-10-30 20:09:36.000,10_housing_homes_affordable_units
+18,"personal, emails, greenbelt, email, account",5,2024-10-30 20:09:36.000,18_greenbelt_commissioner_rcmp_integrity
+19,"bags, amazon, lcbo, paper, paper bags",3,2024-10-30 20:09:36.000,19_bags_paper_serviceontario_paper bags
+-1,"highway, environmental, said, 413, process",9,2024-11-08 06:43:12.000,-1_government_ontario_said_ford
+0,"mexico, trade, canadian, american, ford",11,2024-11-08 06:43:12.000,0_ford_election_tariffs_trump
+1,"care, health, tmu, medical, primary care",6,2024-11-08 06:43:12.000,1_care_health_hospital_health care
+2,"tax, cut, billion, 200, tax cut",8,2024-11-08 06:43:12.000,2_tax_billion_government_ford
+3,"school, boards, board, education, school boards",5,2024-11-08 06:43:12.000,3_students_colleges_school_education
+4,"encampments, people, clause, homeless, shelter",8,2024-11-08 06:43:12.000,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, city, toronto",13,2024-11-08 06:43:12.000,5_bike_lanes_bike lanes_traffic
+9,"tribunal, applicants, human rights, human, watch",1,2024-11-08 06:43:12.000,9_judges_police_bail_judicial
+16,"water, animal, park, died, deaths",1,2024-11-08 06:43:12.000,16_place_ontario place_therme_ontario
+-1,"women, violence, government, epidemic, committee",4,2024-11-16 17:16:48.000,-1_government_ontario_said_ford
+0,"trade, mexico, trump, ford, election",14,2024-11-16 17:16:48.000,0_ford_election_tariffs_trump
+1,"incentives, physicians, family, said, municipalities",2,2024-11-16 17:16:48.000,1_care_health_hospital_health care
+2,"tax, government, billion, harris, businesses",6,2024-11-16 17:16:48.000,2_tax_billion_government_ford
+3,"students, school, universities, schools, boards",5,2024-11-16 17:16:48.000,3_students_colleges_school_education
+4,"encampments, homeless, people, clause, mayors",4,2024-11-16 17:16:48.000,4_encampments_homeless_people_housing
+5,"lanes, bike, bike lanes, bloor, city",14,2024-11-16 17:16:48.000,5_bike_lanes_bike lanes_traffic
+6,"water, permit, wellington, beer, renewal",1,2024-11-16 17:16:48.000,6_beer_stores_store_alcohol
+8,"sites, consumption, drug, consumption sites, safe",4,2024-11-16 17:16:48.000,8_sites_drug_health_consumption
+9,"bail, trial, conditions, justice, criminal",2,2024-11-16 17:16:48.000,9_judges_police_bail_judicial
+11,"climate, court, court appeal, charter, ontario",1,2024-11-16 17:16:48.000,11_energy_power_electricity_gas
+12,"centre, science, science centre, building, said",2,2024-11-16 17:16:48.000,12_science_science centre_centre_buildin...
+-1,"niagara, new deal, cho, destination, deal",4,2024-11-25 03:50:24.000,-1_government_ontario_said_ford
+0,"trade, canada, ford, trump, tariffs",13,2024-11-25 03:50:24.000,0_ford_election_tariffs_trump
+1,"care, health, medical, health care, hospital",12,2024-11-25 03:50:24.000,1_care_health_hospital_health care
+2,"cheese, nelson, cent, debt, tax",1,2024-11-25 03:50:24.000,2_tax_billion_government_ford
+3,"universities, students, colleges, schools, day",2,2024-11-25 03:50:24.000,3_students_colleges_school_education
+4,"clause, homeless, encampments, mayors, people",4,2024-11-25 03:50:24.000,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, toronto, city",9,2024-11-25 03:50:24.000,5_bike_lanes_bike lanes_traffic
+6,"taxes, beer, craft, brewers, somewhat",4,2024-11-25 03:50:24.000,6_beer_stores_store_alcohol
+8,"treatment, addiction, hubs, sites, hart",3,2024-11-25 03:50:24.000,8_sites_drug_health_consumption
+10,"housing, policies, homes, starts, affordable",3,2024-11-25 03:50:24.000,10_housing_homes_affordable_units
+11,"energy, power, nuclear, plants, electricity",5,2024-11-25 03:50:24.000,11_energy_power_electricity_gas
+13,"highway, 407, highway 407, 401, tunnel",4,2024-11-25 03:50:24.000,13_tunnel_highway_401_407
+16,"ontario place, place, audit, site, therme",1,2024-11-25 03:50:24.000,16_place_ontario place_therme_ontario
+17,"metrolinx, transit, crosstown, eglinton, eglinton crosstown",5,2024-11-25 03:50:24.000,17_transit_metrolinx_lrt_crosstown
+-1,"ontario, ford, ontario line, line, decades",15,2024-12-03 14:24:00.000,-1_government_ontario_said_ford
+0,"trade, ford, trump, election, tariffs",17,2024-12-03 14:24:00.000,0_ford_election_tariffs_trump
+1,"care, health, family, health care, hospital",2,2024-12-03 14:24:00.000,1_care_health_hospital_health care
+2,"tax, income, benefit, credit, ontario",2,2024-12-03 14:24:00.000,2_tax_billion_government_ford
+3,"colleges, education, international, students, college",2,2024-12-03 14:24:00.000,3_students_colleges_school_education
+4,"encampments, clause, homeless, notwithstanding clause, notwithstanding",24,2024-12-03 14:24:00.000,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, drivers, toronto",4,2024-12-03 14:24:00.000,5_bike_lanes_bike lanes_traffic
+8,"sites, drug, health, consumption, safe",2,2024-12-03 14:24:00.000,8_sites_drug_health_consumption
+10,"housing, homes, liberal plan, plan, seniors",3,2024-12-03 14:24:00.000,10_housing_homes_affordable_units
+11,"energy, power, electricity, procurement, nuclear",2,2024-12-03 14:24:00.000,11_energy_power_electricity_gas
+15,"carbon, tax, carbon tax, crombie, federal",4,2024-12-03 14:24:00.000,15_carbon_tax_carbon tax_crombie
+16,"therme, ontario place, place, ontario, site",4,2024-12-03 14:24:00.000,16_place_ontario place_therme_ontario
+17,"transit, projects, metrolinx, subway, costs",1,2024-12-03 14:24:00.000,17_transit_metrolinx_lrt_crosstown
+21,"orders, appeal, land, condo, group",3,2024-12-03 14:24:00.000,21_land_development_urban_appeal
+-1,"held news, funding new, eve, help municipalities, shutdown",1,2024-12-12 00:57:36.000,-1_government_ontario_said_ford
+0,"trump, ford, canada, tariffs, border",14,2024-12-12 00:57:36.000,0_ford_election_tariffs_trump
+1,"care, gates, health, niagara, family",1,2024-12-12 00:57:36.000,1_care_health_hospital_health care
+2,"credit, rating, bethlenfalvy, billion, fiscal",2,2024-12-12 00:57:36.000,2_tax_billion_government_ford
+3,"schools, students, school, 12 billion, repair",1,2024-12-12 00:57:36.000,3_students_colleges_school_education
+4,"encampments, homeless, people, homelessness, housing",12,2024-12-12 00:57:36.000,4_encampments_homeless_people_housing
+5,"mentally, phenomenon, dubbed, consequences, effect",1,2024-12-12 00:57:36.000,5_bike_lanes_bike lanes_traffic
+8,"public safety, injection, supervised, facilities, sites",1,2024-12-12 00:57:36.000,8_sites_drug_health_consumption
+12,"science, science centre, centre, building, ontario place",2,2024-12-12 00:57:36.000,12_science_science centre_centre_buildin...
+15,"carbon, carbon tax, tax, crombie, trudeau",2,2024-12-12 00:57:36.000,15_carbon_tax_carbon tax_crombie
+-1,"christmas, traffic, ontario, minister, wishes",3,2024-12-20 11:31:12.000,-1_government_ontario_said_ford
+0,"premiers, channel, ford, trump, election",2,2024-12-20 11:31:12.000,0_ford_election_tariffs_trump
+1,"hospital, care, windsor, health, tender",1,2024-12-20 11:31:12.000,1_care_health_hospital_health care
+4,"encampments, police, homelessness, people, homeless",2,2024-12-20 11:31:12.000,4_encampments_homeless_people_housing
+8,"mohammed, lie, drug, health, sites",1,2024-12-20 11:31:12.000,8_sites_drug_health_consumption
+10,"housing, unclear, remains unclear, spur, productive",1,2024-12-20 11:31:12.000,10_housing_homes_affordable_units
+11,"court, case, climate, emissions, young people",2,2024-12-20 11:31:12.000,11_energy_power_electricity_gas
+0,"election, early, ford, early election, idea",10,2024-12-28 22:04:48.000,0_ford_election_tariffs_trump
+2,"tax, rebate, 200, billion, government",3,2024-12-28 22:04:48.000,2_tax_billion_government_ford
+8,"sites, consumption, supervised, consumption sites, supervised consumption",2,2024-12-28 22:04:48.000,8_sites_drug_health_consumption
+9,"brother, mental, death, mental health, killed",1,2024-12-28 22:04:48.000,9_judges_police_bail_judicial
+10,"property, tax, assessments, property tax, assessment",1,2024-12-28 22:04:48.000,10_housing_homes_affordable_units
+11,"climate, climate change, change, case, court",2,2024-12-28 22:04:48.000,11_energy_power_electricity_gas
+20,"faculty, college, colleges, time, union",1,2024-12-28 22:04:48.000,20_workers_wage_court_public sector
+0,"tariffs, ford, trump, election, ontario",22,2025-01-06 08:38:24.000,0_ford_election_tariffs_trump
+1,"said, doctors, far, medical, boy",1,2025-01-06 08:38:24.000,1_care_health_hospital_health care
+2,"resolutions, year, tax, government, make",1,2025-01-06 08:38:24.000,2_tax_billion_government_ford
+4,"homelessness, homeless, housing, report, people",4,2025-01-06 08:38:24.000,4_encampments_homeless_people_housing
+8,"services, sites, consumption, health, supervised",2,2025-01-06 08:38:24.000,8_sites_drug_health_consumption
+11,"climate, energy, court, case, emissions",4,2025-01-06 08:38:24.000,11_energy_power_electricity_gas
+14,"macleod, nepean, post, ndp, comments",3,2025-01-06 08:38:24.000,14_arnott_speaker_legislature_wearing
+16,"spa, plan, concerned, ontario place, includes",1,2025-01-06 08:38:24.000,16_place_ontario place_therme_ontario
+17,"bypass, transit, freight, milton, metrolinx",1,2025-01-06 08:38:24.000,17_transit_metrolinx_lrt_crosstown
+0,"tariffs, trump, ford, election, canada",45,2025-01-14 19:12:00.000,0_ford_election_tariffs_trump
+1,"care, health, medical, patients, nurse",2,2025-01-14 19:12:00.000,1_care_health_hospital_health care
+2,"billion, tax, government, cheque, ontario",4,2025-01-14 19:12:00.000,2_tax_billion_government_ford
+3,"school, education, teachers, schools, students",3,2025-01-14 19:12:00.000,3_students_colleges_school_education
+4,"homelessness, housing, encampments, homeless, said",4,2025-01-14 19:12:00.000,4_encampments_homeless_people_housing
+6,"wine, lcbo, largest, alcohol, wine spirits",1,2025-01-14 19:12:00.000,6_beer_stores_store_alcohol
+8,"sites, consumption, services, supervised, health",1,2025-01-14 19:12:00.000,8_sites_drug_health_consumption
+11,"energy, power, nuclear, plant, electricity",3,2025-01-14 19:12:00.000,11_energy_power_electricity_gas
+16,"therme, surma, ontario place, place, integrity",2,2025-01-14 19:12:00.000,16_place_ontario place_therme_ontario
+19,"locations, hours, serviceontario, bags, mccarthy",1,2025-01-14 19:12:00.000,19_bags_paper_serviceontario_paper bags
+-1,"announcements, county, road, government, said",6,2025-01-23 05:45:36.000,-1_government_ontario_said_ford
+0,"election, ford, trump, tariffs, ontario",115,2025-01-23 05:45:36.000,0_ford_election_tariffs_trump
+1,"care, family, health, health care, doctor",7,2025-01-23 05:45:36.000,1_care_health_hospital_health care
+2,"cheque, 200, tax, ontario, cheques",7,2025-01-23 05:45:36.000,2_tax_billion_government_ford
+3,"humber, board, colleges, review, governance",3,2025-01-23 05:45:36.000,3_students_colleges_school_education
+5,"bike, lanes, bike lanes, toronto, city",4,2025-01-23 05:45:36.000,5_bike_lanes_bike lanes_traffic
+6,"beer, stores, alcohol, store, wine",8,2025-01-23 05:45:36.000,6_beer_stores_store_alcohol
+8,"mohammed, drug, site, sites, health",3,2025-01-23 05:45:36.000,8_sites_drug_health_consumption
+13,"extension, rail line, broadly, tunnel, bad idea",1,2025-01-23 05:45:36.000,13_tunnel_highway_401_407
+14,"party, hamilton, ndp, israel, caucus",3,2025-01-23 05:45:36.000,14_arnott_speaker_legislature_wearing
+17,"transit, said, grimsby, station, metrolinx",3,2025-01-23 05:45:36.000,17_transit_metrolinx_lrt_crosstown
+-1,"workers, unifor, endorsement, local, ford",8,2025-01-31 16:19:12.000,-1_government_ontario_said_ford
+0,"ford, election, trump, tariffs, ontario",129,2025-01-31 16:19:12.000,0_ford_election_tariffs_trump
+1,"care, health, family, doctor, doctors",14,2025-01-31 16:19:12.000,1_care_health_hospital_health care
+2,"cheque, cheques, williams, rebate, tax",5,2025-01-31 16:19:12.000,2_tax_billion_government_ford
+3,"students, colleges, education, college, schools",6,2025-01-31 16:19:12.000,3_students_colleges_school_education
+4,"encampments, housing, homeless, said, people",5,2025-01-31 16:19:12.000,4_encampments_homeless_people_housing
+8,"tibollo, mental health, mental, addictions, treatment",2,2025-01-31 16:19:12.000,8_sites_drug_health_consumption
+10,"housing, new housing, new, development, charges",1,2025-01-31 16:19:12.000,10_housing_homes_affordable_units
+13,"highway, tunnel, tolls, 407, 401",6,2025-01-31 16:19:12.000,13_tunnel_highway_401_407
+17,"transit, lrt, metrolinx, ottawa, said",13,2025-01-31 16:19:12.000,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, frontier, properties, group, rcmp",3,2025-01-31 16:19:12.000,18_greenbelt_commissioner_rcmp_integrity
+21,"urban, boundary, land, development, city",2,2025-01-31 16:19:12.000,21_land_development_urban_appeal
+-1,"ford, ontario, said, party, ndp",16,2025-02-09 02:52:48.000,-1_government_ontario_said_ford
+0,"ford, election, trump, tariffs, said",86,2025-02-09 02:52:48.000,0_ford_election_tariffs_trump
+1,"care, health, family, health care, doctors",8,2025-02-09 02:52:48.000,1_care_health_hospital_health care
+2,"ford, tax, government, ontario, border",2,2025-02-09 02:52:48.000,2_tax_billion_government_ford
+3,"colleges, students, college, tuition, student",9,2025-02-09 02:52:48.000,3_students_colleges_school_education
+4,"mental, mental health, housing, encampments, health",1,2025-02-09 02:52:48.000,4_encampments_homeless_people_housing
+5,"ndp said, northern, safety, lanes, ndp",1,2025-02-09 02:52:48.000,5_bike_lanes_bike lanes_traffic
+6,"beer, billion government, cancellation, store, beer store",1,2025-02-09 02:52:48.000,6_beer_stores_store_alcohol
+8,"sites, site, drug, safe, spaces",2,2025-02-09 02:52:48.000,8_sites_drug_health_consumption
+9,"bail, judges, police, ford, campaign",2,2025-02-09 02:52:48.000,9_judges_police_bail_judicial
+10,"housing, ford, homes, ontario, new",2,2025-02-09 02:52:48.000,10_housing_homes_affordable_units
+11,"rates, hydro, subsidies, harris, 2002",1,2025-02-09 02:52:48.000,11_energy_power_electricity_gas
+13,"highway, tunnel, congestion, transit, 401",3,2025-02-09 02:52:48.000,13_tunnel_highway_401_407
+16,"therme, animals, ontario place, place, gates",2,2025-02-09 02:52:48.000,16_place_ontario place_therme_ontario
+17,"transit, metrolinx, lrt, ottawa, city",1,2025-02-09 02:52:48.000,17_transit_metrolinx_lrt_crosstown
+-1,"ontario, said, ford, government, advertising",17,2025-02-17 13:26:24.000,-1_government_ontario_said_ford
+0,"election, ford, tariffs, party, ontario",180,2025-02-17 13:26:24.000,0_ford_election_tariffs_trump
+1,"care, patients, health, hospital, family",18,2025-02-17 13:26:24.000,1_care_health_hospital_health care
+2,"tax, billion, income, taxes, billion years",5,2025-02-17 13:26:24.000,2_tax_billion_government_ford
+3,"education, schools, school, students, teachers",5,2025-02-17 13:26:24.000,3_students_colleges_school_education
+4,"housing, hamilton, encampments, party, city",4,2025-02-17 13:26:24.000,4_encampments_homeless_people_housing
+6,"beer, access, corner, sold, stores",1,2025-02-17 13:26:24.000,6_beer_stores_store_alcohol
+8,"sites, drug, drug use, supervised drug, supervised",1,2025-02-17 13:26:24.000,8_sites_drug_health_consumption
+9,"prison, parole, penalty, life, death",1,2025-02-17 13:26:24.000,9_judges_police_bail_judicial
+10,"housing, rent, affordable, homes, units",5,2025-02-17 13:26:24.000,10_housing_homes_affordable_units
+11,"energy, nuclear, electricity, plants, gas",3,2025-02-17 13:26:24.000,11_energy_power_electricity_gas
+13,"tunnel, highway, 401, transit, traffic",4,2025-02-17 13:26:24.000,13_tunnel_highway_401_407
+14,"party, riding, ndp, hamilton, candidate",2,2025-02-17 13:26:24.000,14_arnott_speaker_legislature_wearing
+20,"workers, wage, sector, public sector, public",1,2025-02-17 13:26:24.000,20_workers_wage_court_public sector
+21,"oakville, land, proposal, development, developers",2,2025-02-17 13:26:24.000,21_land_development_urban_appeal

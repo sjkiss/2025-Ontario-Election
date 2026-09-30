@@ -1,78 +1,44 @@
-# ------------------------------------------------------------------
-# Ontario leader approval — Abacus net-impression tracker, 2024–2025
-# Data: data/ontario_leader_approval_polls (1).xlsx, sheet "Leader Approval Polls"
-# Window: Jan 2024 through election day (Feb 27, 2025)
-# ------------------------------------------------------------------
-
 library(readxl)
 library(dplyr)
 library(stringr)
 library(lubridate)
 library(ggplot2)
+library(ggrepel)
 library(here)
 
-election_day <- as.Date("2025-02-27")
-
-# --- 1. Read local file --------------------------------------------
+# --- 1. Read cleaned data -------------------------------------------
 raw <- read_excel(
-  here("data", "ontario_leader_approval_polls (1).xlsx"),
-  sheet = "Leader Approval Polls"
+  path  = here("data/ontario_leader_approval_polls.xlsx"),
+  sheet = "Leader Approval Polls",
+  col_types = "text"
 )
 
-# --- 2. Clean ------------------------------------------------------
+# --- 2. Clean ---------------------------------------------------------
 polls <- raw |>
-  filter(
-    str_detect(Pollster, regex("abacus", ignore_case = TRUE)),
-    str_detect(Metric,   regex("net impression", ignore_case = TRUE))
-  ) |>
-  rename(
+ # filter(Pollster %in% c("Abacus Data", "Angus Reid Institute", "Liaison Strategies")) |>
+  filter(Pollster %in% c("Abacus Data")) |>
+   rename(
     field_end = `Field End`,
     leader    = Leader,
-    positive  = `Positive %`,
-    negative  = `Negative %`,
-    net       = Net
+    net       = Net,
+    pollster  = Pollster
   ) |>
   mutate(
-    field_end = str_trim(as.character(field_end)),
-    date_chr = if_else(
-      str_detect(field_end, "^\\d{4}-\\d{2}$"),
-      paste0(field_end, "-15"),   # month-only -> mid-month
-      str_sub(field_end, 1, 10)   # already a full date
+    date = case_when(
+      str_detect(field_end, "^\\d+(\\.\\d+)?$")       ~ as.Date(as.numeric(field_end), origin = "1899-12-30"),
+      str_detect(field_end, "^\\d{4}-\\d{2}-\\d{2}$") ~ ymd(field_end),
+      str_detect(field_end, "^\\d{4}-\\d{2}$")        ~ ymd(paste0(field_end, "-15")),
+      TRUE                                            ~ as.Date(NA)
     ),
-    date = ymd(date_chr, quiet = TRUE),
-    across(c(positive, negative, net), as.numeric),
-    net = coalesce(net, positive - negative),
+    net = as.numeric(net),
     leader = factor(
       leader,
       levels = c("Ford", "Crombie", "Stiles", "Fraser (interim Lib)")
-    )
+    ),
+    pollster = factor(pollster, levels = c("Abacus Data", "Angus Reid Institute", "Liaison Strategies"))
   ) |>
-  select(-date_chr) |>
-  filter(!is.na(date), !is.na(net), !is.na(leader),
-         date >= as.Date("2024-01-01"),
-         date <= election_day) |>
-  droplevels() |>
-  arrange(leader, date)
-
-stopifnot(nrow(polls) > 0)
-message("Waves kept: ", nrow(polls))
-print(count(polls, leader))
-
-# --- 3. Direct labels at the end of each series --------------------
-labels <- polls |>
-  group_by(leader) |>
-  slice_max(date, n = 1, with_ties = FALSE) |>
-  ungroup() |>
-  mutate(
-    label = str_replace(as.character(leader),
-                        fixed("Fraser (interim Lib)"),
-                        "Fraser\n(interim Lib)"),
-    nudge_y = case_when(
-      leader == "Stiles"               ~  1.5,
-      leader == "Fraser (interim Lib)" ~ -1.5,
-      TRUE                             ~  0
-    )
-  )
+  filter(!is.na(date), !is.na(net), date >= as.Date("2024-01-01")) |>
+  arrange(leader, pollster, date)
 
 party_cols <- c(
   "Ford"                 = "#1A4782",
@@ -81,43 +47,78 @@ party_cols <- c(
   "Fraser (interim Lib)" = "#8B0000"
 )
 
-y_bottom <- min(polls$net) - 2
+election_day <- as.Date("2025-02-27")
+
+# --- Restrict to pre-election period --------------------------------
+polls <- polls |> filter(date < election_day)
+
+# Direct labels: last wave per leader (across either pollster)
+labels <- polls |>
+  group_by(leader) |>
+  slice_max(date, n = 1, with_ties = FALSE) |>
+  ungroup() |>
+  mutate(
+    label = recode(as.character(leader),
+                   "Fraser (interim Lib)" = "Fraser (interim Lib)")
+  )
+
+y_top    <- max(polls$net) + 6
+y_bottom <- min(polls$net) - 3
 
 # --- 4. Plot -------------------------------------------------------
-p <- ggplot(polls, aes(x = date, y = net, colour = leader)) +
+p <- ggplot(polls, aes(x = date, y = net, colour = leader, shape = pollster,
+                       group = leader)) +
   geom_hline(yintercept = 0, linewidth = 0.3, colour = "grey55") +
-  geom_vline(xintercept = election_day, linetype = "dashed",
-             colour = "grey40", linewidth = 0.4) +
-  annotate("text", x = election_day, y = y_bottom,
+  geom_vline(xintercept = election_day, linetype = "dotted",
+             colour = "grey45", linewidth = 0.5) +
+  annotate("label", x = election_day, y = y_top,
            label = "Election\nFeb 27, 2025",
-           hjust = 1.05, vjust = 0, size = 3, colour = "grey30") +
-  geom_line(linewidth = 0.8, alpha = 0.9) +
-  geom_point(size = 2.2) +
-  geom_text(data = labels,
-            aes(label = label, y = net + nudge_y),
-            hjust = -0.15, size = 3.4, fontface = "bold",
-            lineheight = 0.9, show.legend = FALSE) +
+           hjust = 1.05, vjust = 1, size = 3.1, colour = "grey25",
+           fill = "white", label.size = 0, label.padding = unit(0.15, "lines")) +
+  geom_smooth(method = "loess", se = FALSE) +
+  geom_point(size = 2.3) +
+  geom_text_repel(
+    data = labels,
+    aes(label = label),
+    hjust = 0, direction = "y", nudge_x = 18, xlim = c(NA, Inf),
+    segment.color = "grey70", segment.size = 0.3,
+    size = 3.6, fontface = "bold", lineheight = 0.9,
+    min.segment.length = 0, box.padding = 0.3,
+    show.legend = FALSE
+  ) +
   scale_colour_manual(values = party_cols, guide = "none") +
-  scale_x_date(breaks = seq(as.Date("2024-01-01"), election_day,
-                            by = "1 month"),
+  scale_shape_manual(values = c("Abacus Data" = 16, "Angus Reid Institute" = 17, "Liaison Strategies" = 15),
+                     name = "Pollster") +
+  scale_x_date(breaks = seq(as.Date("2024-01-01"), election_day, by = "3 months"),
                date_labels = "%b %Y",
-               expand = expansion(mult = c(0.02, 0.14))) +
+               limits = c(as.Date("2024-01-01"), NA),
+               expand = expansion(mult = c(0.02, 0.12))) +
+  scale_y_continuous(expand = expansion(mult = c(0.06, 0.10))) +
   coord_cartesian(clip = "off") +
   labs(
-    title    = "Net Impressions of Ontario Party Leaders, 2024\u20132025",
-    caption  = "Source: Abacus Data",
-    x = NULL, y = "Net impression (points)"
+    title    = "Net ratings of Ontario party leaders, Jan 2024\u2013Feb 2025",
+    subtitle = "Abacus Data net ratings, by survey wave",
+    x = NULL, y = "Net rating (points)",
+    caption  = "Typical wave MOE \u00b1\u22483 percentage points."
   ) +
   theme_minimal(base_size = 12) +
   theme(
     plot.title.position = "plot",
-    plot.caption.position = "plot",
-    plot.caption = element_text(hjust = 0, colour = "grey30", size = 9),
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    panel.grid.minor = element_blank()
+    plot.title    = element_text(face = "bold", size = 15, margin = margin(b = 4)),
+    plot.subtitle = element_text(colour = "grey35", size = 10.5, margin = margin(b = 12)),
+    plot.caption  = element_text(colour = "grey45", size = 8.5, margin = margin(t = 10)),
+    axis.text.x   = element_text(angle = 45, hjust = 1),
+    axis.title.y  = element_text(size = 10.5, colour = "grey25"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    legend.position = "none",
+    legend.title = element_text(size = 9.5, face = "bold"),
+    legend.text  = element_text(size = 9),
+    plot.margin  = margin(t = 12, r = 55, b = 8, l = 8)
   )
 
 print(p)
 
-ggsave(here("ontario_leader_net_impressions.png"), p,
-       width = 10, height = 6, dpi = 300)
+ggsave(here("Plots/ontario_leader_net_impressions.png"), p,
+       width = 10, height = 6.2, dpi = 300)
+

@@ -1,0 +1,26 @@
+article_id,title,decision,reason
+2915729088,Trudeau powerless to act after Saskatchewan breaks carbon tax law,REJECT,Federal/Saskatchewan/Quebec constitutional dispute; no Ontario focus
+3122501329,Why the U.S. election probably won't matter for markets,REJECT,US election market commentary; no Ontario relevance
+3082873316,New squabble casts doubt on tentative deal at LCBO,ACCEPT,"Ontario provincial issue (LCBO strike, OPSEU)"
+2955226759,FIRST READING: How Canadian governments are quietly rewriting the English language,REJECT,Federal/BC/Alberta DEI-language story; Ontario mentioned only in passing
+3066146978,What Trump verdict says about U.S,REJECT,US legal-system opinion; Ontario wrongful-conviction reference is tangential
+3114142983,Toronto's new Nobel laureate Geoffrey Hinton slams Doug Ford,ACCEPT,"Ontario provincial issue (Premier Ford, Ontario Science Centre)"
+2967007606,Ontario's social assistance rates need to rise,ACCEPT,"Ontario provincial issue (Ontario Works, Premier Ford)"
+3072280855,'There's no safe Liberal seats in English Canada',REJECT,"Federal by-election (Toronto-St Paul's, Waterloo Region); not provincial"
+3013971640,Ford government makes a deal with city of Ottawa,ACCEPT,"Ontario provincial issue (Premier Ford, provincial-municipal funding)"
+3106573032,Montreal by-election win confirms the Bloc's staying power,REJECT,Federal Quebec by-election/Bloc Quebecois; no Ontario relevance
+3111375600,Why are TDSB students being sent to rallies in the first place?,ACCEPT,"Ontario provincial issue (Toronto school board, Queen's Park)"
+3052716586,Newly released records reignite questions about Premier Ford's office's involvement in the Greenbelt scandal,ACCEPT,"Ontario provincial issue (Premier Ford, Greenbelt/housing scandal)"
+3076126786,"June 29, 2024 (Page HP2)",REJECT,Text unavailable ('Not available.') — cannot classify
+3051268004,"May 1, 2024 (Page A2)",REJECT,Text unavailable ('Not available.') — cannot classify
+3119094472,Scalp facials and hair 'botox' are the latest look of luxury hair care,REJECT,Lifestyle/beauty article; no political relevance
+3111373227,"September 20, 2024 (Page A5)",REJECT,Text unavailable ('Not available.') — cannot classify
+3033844868,Fundraiser at centre of major scandal (obituary of Patti Starr),ACCEPT,"Ontario provincial issue (historical Ontario political scandal) — borderline, see feedback re: relevance to a live-election topic model"
+3071996058,China 'taking advantage': Freeland announces hurried EV tariff consult over summer,REJECT,Primarily a federal policy story (Finance Minister Freeland); Ontario Premier's reaction is a secondary quote only
+3159749017,'Pray we get elected'; Seeks new mandate from voters 'to fight Trump tariffs',ACCEPT,Ontario provincial issue — directly about the 2025 Ontario election call
+3059793506,"Yes, Sylvia Jones should resign; Letters to the editor",ACCEPT,Ontario provincial issue (Ontario Health Minister)
+3161632000,Canada's playbook is futile against Trump 2.0,REJECT,National/federal-provincial trade-strategy op-ed; not Ontario-specific (author is ex-Quebec premier)
+3163297700,Ontario's election adventures through Trump's looking glass; Trade war,ACCEPT,Ontario provincial issue — directly about the 2025 Ontario election
+2988140952,Canadian Jews are once again in the crosshairs of cancel culture,REJECT,Social/cultural op-ed; no Ontario political relevance
+3155545346,How Donald Trump can help Olivia Chow with her Doug Ford problem,REJECT,"Very short excerpt; ambiguous municipal/federal framing, not clearly a provincial-issue focus"
+3061561933,More than 700 vehicles have been reported stolen in Ottawa this year,"ACCEPT (not used — 11th accepted article, 10 already reached)",Ontario provincial/municipal crime issue; would qualify but pool of 10 was already filled

@@ -1,0 +1,101 @@
+article_id,section,date,origin,relevant,skip_reason,topics_mentioned
+2914136645,News,2024-01-16,Globe and Mail,TRUE,,post_secondary;immigration;housing
+3048997361,News,2024-04-29,Ottawa Citizen,FALSE,About pro-Palestinian campus encampment protests and university policy responses to the Israel-Hamas war; Ford's brief quote about wanting people to get along peacefully is incidental and not about an election-connected provincial policy issue.,
+3064416952,News,2024-06-04,Ottawa Citizen,FALSE,"About a federal byelection (Toronto-St. Paul's) and the Longest Ballot Committee's federal electoral-reform protest; concerns federal, not Ontario provincial, politics.",
+2925082577,opinion/letters-to-the-editor,2024-02-12,Toronto Star,FALSE,"Letters focus on preventing car theft, a federal Criminal Code/justice matter (citing federal Justice Minister Arif Virani); not connected to Ontario provincial jurisdiction or the election. Text is truncated before the 'Premier on the right track' letter begins.",
+3071391372,Canada / World,2024-06-24,Hamilton Spectator,TRUE,,public_infrastructure
+3064715152,politics/provincial,2024-06-04,Toronto Star,TRUE,,election_timing;alcohol_sales;taxes
+3047409433,Letters,2024-04-27,National Post,TRUE,,legislature_conduct
+3039702807,News,2024-04-17,Toronto Star,TRUE,,public_transit;housing;immigration
+3115717494,FP Comment,2024-10-11,National Post,FALSE,"Opinion piece on federal EV-subsidy policy and potential auto-industry bailouts (Volkswagen, Northvolt, Stellantis); only a passing mention of Ontario's regional economic exposure, no discussion of the Ontario government, election, or provincial jurisdiction.",
+3151480592,Canada,2025-01-04,Ottawa Citizen,FALSE,"About pressure within the federal Liberal caucus for PM Justin Trudeau to resign; entirely federal politics, no Ontario provincial election content.",
+3049129516,Opinion,2024-04-30,Sault Star,FALSE,"About Alberta's UCP government and municipal-authority legislation; concerns Alberta, not Ontario.",
+3157227995,Opinion,2025-01-19,Toronto Sun,FALSE,"Historical/macro commentary on U.S. monetary and fiscal policy and its spillover effects on Canadian real estate; no mention of Ontario provincial government, election, or provincial-jurisdiction issues.",
+3043320607,National,2024-04-22,Globe and Mail,TRUE,,economic_development
+3134433239,Sports,2024-11-30,Sudbury Star,FALSE,Sports article about a competitive curling team's positional change and results; unrelated to Ontario politics or the election.,
+2973827218,News,2024-03-25,Globe and Mail,TRUE,,municipal_powers;housing;taxes
+3076853326,News,2024-07-09,Globe and Mail,TRUE,,alcohol_retail
+3034973388,News,2024-04-10,Toronto Star,TRUE,,housing;corruption_scandal;public_opinion_polling
+3059825139,Opinion,2024-05-24,Ottawa Citizen,TRUE,,health_care
+3129922446,politics/provincial,2024-11-18,Hamilton Spectator,TRUE,,harm_reduction_drug_policy;crime
+3126610407,News,2024-11-11,Globe and Mail,FALSE,"Article's focus is Alberta's Calgary supervised drug-use site debate and Alberta Premier Danielle Smith; Ontario/Ford is only a brief tangential comparison, not the article's subject.",
+3102454046,politics/political-opinion,2024-09-10,Toronto Star,TRUE,,alcohol_retail;housing;public_transit
+3109935396,opinion/contributors,2024-09-26,Toronto Star,TRUE,,public_transit
+2968932423,opinion/letters-to-the-editor,2024-03-20,Hamilton Spectator,TRUE,,environment;public_transit (bike lanes/street changes per headline)
+3134182555,Canada,2024-11-29,National Post,TRUE,,tariffs_trade
+3168996870,Local / News,2025-02-21,Hamilton Spectator,TRUE,,election_campaign;crime;housing;education
+3164584752,NP Comment,2025-02-07,National Post,FALSE,Article is about interprovincial trade barriers as a general Canadian federal policy issue; no Ontario-specific content or connection to the Ontario election.,
+3076428079,Columnists,2024-07-06,Toronto Sun,TRUE,,alcohol_retail
+2927876471,politics/provincial,2024-02-16,Toronto Star,TRUE,,housing;environment;municipal_powers
+2972743194,opinion/contributors,2024-03-21,Hamilton Spectator,TRUE,,taxes;post_secondary
+3066238588,Editorial,2024-06-11,Hamilton Spectator,TRUE,,health_care
+2919244437,News,2024-01-29,Globe and Mail,FALSE,Federal foreign-interference inquiry story; not about the Ontario election or provincial jurisdiction issues.,
+3049874136,politics/federal,2024-05-01,Hamilton Spectator,FALSE,Federal House of Commons dispute over Poilievre's ejection by the Speaker; not Ontario provincial.,
+3123169792,Opinion,2024-11-01,Windsor Star,TRUE,,taxes;health_care;education;electioneering
+3119329502,Issues,2024-10-22,National Post,FALSE,"About the 2024 BC provincial election (Eby/NDP); a different province, not Ontario.",
+3086989391,Canadian Politics,2024-07-31,National Post,FALSE,Federal parliamentary committee dispute over an abortion-related motion; not Ontario provincial jurisdiction.,
+3122610268,news/morning-digest,2024-10-31,Toronto Star,TRUE,,taxes;electioneering
+2927963480,NP Comment,2024-02-17,National Post,FALSE,Op-ed critiquing the federal $10-a-day national daycare program broadly across Canada; no Ontario-specific or election-cycle tie.,
+3087394329,Columnists,2024-08-01,Toronto Sun,TRUE,,municipal_powers;taxes
+2933613826,politics/federal,2024-03-01,Hamilton Spectator,FALSE,"Obituary of former federal PM Brian Mulroney; includes only a brief Ford tribute quote, not about Ontario election issues.",
+2957614159,FP Comment,2024-03-15,National Post,FALSE,Op-ed mainly about Alberta's auto-insurance premium caps and history; no Ontario election connection.,
+3037790131,Opinion,2024-04-12,Ottawa Citizen,FALSE,Personal reminiscence about former federal House Speaker John Fraser; unrelated to the Ontario election.,
+3166970371,Opinion,2025-02-15,Toronto Star,TRUE,,tariffs_trade
+3118626167,Canada / World,2024-10-21,Hamilton Spectator,TRUE,,electioneering;public_transit;municipal_powers;alcohol
+3079930926,City+ Region,2024-07-13,Windsor Star,FALSE,Local human-interest piece about a chicken lunch for seniors at a food bank; not about the election or provincial issues.,
+3165172368,Letters,2025-02-10,Toronto Sun,TRUE,,taxes;electioneering
+3123102819,Toronto & GTA,2024-10-31,Toronto Sun,FALSE,"Petition about ending daylight saving time; Ford mentioned only as a petition recipient, no discussion of Ontario election or provincial election-cycle issues.",
+3077691670,NP Comment,2024-07-09,National Post,FALSE,Article text as provided is truncated to a generic introductory paragraph about the free press being a pillar of democracy; no actual discussion of the Ontario ad-spending plan or election-cycle connection is present in the available text.,
+3092922518,politics/provincial,2024-08-13,Hamilton Spectator,TRUE,,housing;crime;corruption_scandal
+3013891319,Comment,2024-03-28,Toronto Sun,FALSE,Opinion piece about the federal Trudeau government's carbon tax and the Parliamentary Budget Officer; no Ontario provincial election content.,
+3109645855,politics/provincial,2024-09-25,Toronto Star,TRUE,,party_politics
+3115714885,Culture,2024-10-12,Toronto Star,FALSE,"Charity gala event recap; Ford and Chow mentioned only as attendees, no political or election content.",
+2955975663,News,2024-03-13,Globe and Mail,TRUE,,crime;judicial_appointments
+NA,Opinion,2024-06-04,Hamilton Spectator,FALSE,Content is a stub/fragment ('A touching story from the Open') with no discernible connection to the Ontario election or provincial issues.,
+3167485899,News,2025-02-17,Globe and Mail,TRUE,,party_politics
+3138953955,news/canada,2024-12-03,Toronto Star,TRUE,,health_care;child_welfare
+3043503222,Opinion,2024-04-22,National Post,FALSE,"Opinion piece on federal free-speech/Trudeau-government issues (Bill C-63, U.S. politics); no mention of Ontario or the provincial election.",
+2910846213,National,2024-01-06,Globe and Mail,FALSE,"Article's focus is the Saskatchewan-federal carbon tax dispute; Ontario is mentioned only in a brief aside about the notwithstanding clause, not the focus of the piece and not about the 2025 Ontario election.",
+2922392425,Opinion,2024-02-06,Toronto Star,TRUE,,municipal_powers;public_transit;housing
+3047702857,Horse Racing,2024-04-28,Toronto Sun,FALSE,"Horse racing sports recap; Ford and Chow mentioned only as attendees at a community event, no political/election content.",
+3162207381,opinion/star-columnists,2025-02-01,Toronto Star,TRUE,,tariffs_trade;housing;health_care;public_transit;crime;municipal_powers
+3087525661,Local / News,2024-08-03,Hamilton Spectator,FALSE,"Article is about a federal-level political dispute (Conservative MP vs. Hamilton city council) over a municipal housing development rejection; no mention of Ontario provincial government, premier, or the 2025 Ontario election.",
+3042453370,opinion/contributors,2024-04-21,Hamilton Spectator,TRUE,,education; mental_health
+3080953426,Canada / World,2024-07-16,Hamilton Spectator,TRUE,,alcohol
+3071629817,Letters,2024-06-24,Toronto Sun,TRUE,,municipal_powers
+3152067117,National,2025-01-07,Globe and Mail,FALSE,Article is entirely about federal politics: Justin Trudeau's resignation as PM and the federal Liberal leadership race. No Ontario provincial or election content.,
+3097482682,opinion/letters-to-the-editor,2024-08-27,Toronto Star,TRUE,,health_care
+3164229320,Editorial,2025-02-07,Hamilton Spectator,TRUE,,environment_greenbelt; housing
+3091177136,Local News,2024-08-09,Ottawa Citizen,FALSE,Article is about a candidate dropping her bid for the federal Conservative Party nomination ahead of the next federal election; not related to the Ontario provincial election.,
+3157719754,Toronto & GTA,2025-01-21,Toronto Sun,TRUE,,tariffs_trade
+3116427910,news/gta,2024-10-13,Toronto Star,TRUE,,crime; hate_crimes
+3072502056,FP Windsor,2024-06-26,Windsor Star,TRUE,,tariffs_trade
+3056062790,Canada,2024-05-17,National Post,TRUE,,health_care
+2933737443,Business,2024-03-02,Globe and Mail,FALSE,"Article is a generational tax-policy opinion piece focused on federal spending (OAS, federal deficit) and national tax debate; Ontario Progressive Conservatives are named only once, in passing, as one of several governments (alongside federal Liberals and BC NDP) running deficits. Not thematically about the Ontario election or provincial-jurisdiction issues.",
+3123785939,news/gta,2024-11-04,Toronto Star,TRUE,,municipal_powers; education; crime; public_transit (bike lanes); taxes
+3167578275,News,2025-02-17,Toronto Star,TRUE,,campaign_conduct
+2942216509,podcasts/its-political,2024-03-08,Toronto Star,FALSE,"Article covers federal pharmacare legislation and federal politicians (Mark Holland, Jagmeet Singh); no Ontario-specific election or provincial-jurisdiction content.",health_care
+3119866527,News,2024-10-24,Globe and Mail,FALSE,"Single-sentence generic national CIHI statistic on primary care access; no Ontario-specific actor, policy, or election connection.",health_care
+3132362669,news/insight,2024-11-24,Toronto Star,FALSE,"Article's focus is Paris's ring-road speed-limit dispute; the Ontario/Toronto bike-lane fight is only a brief one-paragraph analogy, not the article's subject.",public_transit (bike lanes)
+3156204089,politics/provincial,2025-01-15,Hamilton Spectator,TRUE,,education
+3053449546,News,2024-05-11,Toronto Star,TRUE,,agriculture_trespass_law
+3126483284,news/gta,2024-11-10,Toronto Star,TRUE,,public_transit (bike lanes)
+2921460190,News,2024-02-03,Toronto Star,FALSE,"Article is about federal grocery-price politics (Trudeau vs. Poilievre, federal carbon pricing); Doug Ford's government appears only incidentally as the jurisdiction where a lobbying registration was filed.",taxes
+3042413714,Opinion,2024-04-20,Sault Star,TRUE,,domestic_violence_policy
+3057038253,News,2024-05-21,Toronto Star,FALSE,"Federal auto-theft strategy announced by federal cabinet ministers; Ontario is mentioned only as a location where thefts occur, with no provincial government actor or policy discussed.",crime
+3157753810,Canada,2025-01-21,Kingston Whig-Standard,FALSE,Article about Canadians attending Trump's inauguration; no Ontario election or provincial-issue content.,
+3075419713,news/gta,2024-07-02,Toronto Star,TRUE,,campus_protests;post_secondary
+3148768463,News,2024-12-24,Toronto Star,TRUE,,climate_policy
+3130999854,FP Comment,2024-11-20,National Post,FALSE,Article text is truncated to a single fragmentary sentence; insufficient content to assess relevance or extract sentiment despite a title suggesting an education-related opinion piece.,
+3165591607,Opinion,2025-02-11,Sudbury Star,FALSE,"Opinion letter about the federal Liberal leadership race and federal ridings (Nickel Belt, Sudbury) ahead of a federal election; not about Ontario provincial politics.",taxes;crime
+3081756667,politics/provincial,2024-07-17,Toronto Star,TRUE,,labour_relations;alcohol_policy;election_polling
+3123271354,Canada,2024-11-01,National Post,TRUE,,post_secondary;health_care
+2918434299,Canada,2024-01-25,Sudbury Star,TRUE,,immigration;post_secondary
+3037733622,Comment,2024-04-12,Toronto Sun,TRUE,,alcohol
+3099097581,NP Comment,2024-08-30,National Post,TRUE,,health_care;crime
+3103076325,Comment,2024-09-11,Ottawa Sun,FALSE,"Article focuses entirely on federal Liberal party politics (Trudeau, federal caucus retirements, federal leadership dynamics) with no discussion of the Ontario provincial election or provincial-jurisdiction issues; the one mention of an ""Ontario Liberal MP"" refers to a federal riding, not provincial politics.",
+2973544427,Weekend Post,2024-03-23,National Post,FALSE,Generic commentary on political lying/deception research with no Ontario-specific or election-specific content in the provided text.,
+2933366680,opinion/star-columnists,2024-03-01,Toronto Star,TRUE,,judicial_appointments
+3108476043,News,2024-09-24,Globe and Mail,TRUE,,public_transit;municipal_powers;housing;immigration;taxes
+3132154588,Columnists,2024-11-22,Toronto Sun,TRUE,,taxes;housing
+3053397725,News,2024-05-11,Globe and Mail,FALSE,Concerns a federal citizenship law reform prompted by an Ontario Superior Court ruling; the substantive policy (citizenship law) is federal jurisdiction and unrelated to the Ontario provincial election or provincial policy issues.,

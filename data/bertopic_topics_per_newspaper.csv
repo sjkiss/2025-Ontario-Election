@@ -1,0 +1,230 @@
+Topic,Words,Frequency,Class,Name
+-1,"ontario, advertising, government, ford, local",24,The Toronto Sun,-1_government_ontario_said_ford
+0,"ford, tariffs, election, trump, crombie",87,The Toronto Sun,0_ford_election_tariffs_trump
+1,"care, health, family, doctors, health care",10,The Toronto Sun,1_care_health_hospital_health care
+2,"tax, billion, spending, ford, government",24,The Toronto Sun,2_tax_billion_government_ford
+3,"education, school, students, schools, colleges",14,The Toronto Sun,3_students_colleges_school_education
+4,"encampments, people, homelessness, housing, homeless",5,The Toronto Sun,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, city, toronto",11,The Toronto Sun,5_bike_lanes_bike lanes_traffic
+6,"beer, stores, alcohol, store, convenience",11,The Toronto Sun,6_beer_stores_store_alcohol
+7,"lcbo, strike, union, workers, hornick",17,The Toronto Sun,7_lcbo_strike_union_stores
+8,"sites, drug, health, safe, safer",12,The Toronto Sun,8_sites_drug_health_consumption
+9,"judges, bail, police, judicial, ford",11,The Toronto Sun,9_judges_police_bail_judicial
+10,"housing, storey, residential, new housing, buildings",4,The Toronto Sun,10_housing_homes_affordable_units
+11,"energy, electricity, power, nuclear, gas",6,The Toronto Sun,11_energy_power_electricity_gas
+12,"science centre, science, centre, facility, roof",4,The Toronto Sun,12_science_science centre_centre_buildin...
+13,"tunnel, highway, 401, idea, transit",7,The Toronto Sun,13_tunnel_highway_401_407
+14,"hahn, speaker, arnott, legislature, political",9,The Toronto Sun,14_arnott_speaker_legislature_wearing
+15,"carbon, carbon tax, tax, crombie, ford",12,The Toronto Sun,15_carbon_tax_carbon tax_crombie
+16,"business case, ontario place, therme, place, science centre",1,The Toronto Sun,16_place_ontario place_therme_ontario
+17,"transit, metrolinx, crosstown, line, train",9,The Toronto Sun,17_transit_metrolinx_lrt_crosstown
+19,"bags, paper, lcbo, paper bags, locations",10,The Toronto Sun,19_bags_paper_serviceontario_paper bags
+20,"court, strike, right, decision, ttc",1,The Toronto Sun,20_workers_wage_court_public sector
+-1,"government, said, ontario, federal, mining",22,The Globe and Mail,-1_government_ontario_said_ford
+0,"mr, mr ford, ford, trump, election",75,The Globe and Mail,0_ford_election_tariffs_trump
+1,"care, health, family, primary care, doctors",13,The Globe and Mail,1_care_health_hospital_health care
+2,"tax, government, year, billion, budget",14,The Globe and Mail,2_tax_billion_government_ford
+3,"students, colleges, education, universities, schools",23,The Globe and Mail,3_students_colleges_school_education
+4,"clause, encampments, notwithstanding clause, notwithstanding, mayors",7,The Globe and Mail,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, toronto, traffic",10,The Globe and Mail,5_bike_lanes_bike lanes_traffic
+6,"beer, store, stores, beer store, alcohol",14,The Globe and Mail,6_beer_stores_store_alcohol
+7,"lcbo, strike, stores, union, workers",12,The Globe and Mail,7_lcbo_strike_union_stores
+8,"sites, drug, consumption, health, drugs",14,The Globe and Mail,8_sites_drug_health_consumption
+9,"judges, judicial, appointments, lawyers, mr",9,The Globe and Mail,9_judges_police_bail_judicial
+10,"housing, homes, new, municipalities, cities",13,The Globe and Mail,10_housing_homes_affordable_units
+11,"energy, power, electricity, nuclear, climate",5,The Globe and Mail,11_energy_power_electricity_gas
+12,"science, science centre, centre, building, roof",12,The Globe and Mail,12_science_science centre_centre_buildin...
+13,"tunnel, highway, 401, traffic, 407",10,The Globe and Mail,13_tunnel_highway_401_407
+14,"arnott, speaker, wearing, ban, legislature",5,The Globe and Mail,14_arnott_speaker_legislature_wearing
+15,"carbon, tax, carbon tax, crombie, pricing",3,The Globe and Mail,15_carbon_tax_carbon tax_crombie
+16,"therme, ontario place, place, ontario, site",11,The Globe and Mail,16_place_ontario place_therme_ontario
+17,"transit, mr, lrt, metrolinx, ttc",5,The Globe and Mail,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, mr, commissioner, rcmp, mr ford",3,The Globe and Mail,18_greenbelt_commissioner_rcmp_integrity
+19,"bags, paper, paper bags, plastic, lcbo",2,The Globe and Mail,19_bags_paper_serviceontario_paper bags
+20,"workers, wage, court, appeal, 124",6,The Globe and Mail,20_workers_wage_court_public sector
+21,"region, land, waterloo, landowners, development",2,The Globe and Mail,21_land_development_urban_appeal
+0,"threat, trump, tariffs, tariff, commerce",1,Other,0_ford_election_tariffs_trump
+13,"tunnel, multi billion, cost, provincial taxpayers, cost hundreds",1,Other,13_tunnel_highway_401_407
+-1,"niagara, said, government, ontario, ford",8,The Standard,-1_government_ontario_said_ford
+0,"niagara, said, niagara falls, falls, ford",16,The Standard,0_ford_election_tariffs_trump
+1,"care, health, hospital, niagara, said",11,The Standard,1_care_health_hospital_health care
+2,"niagara, budget, oosterhoff, region, billion",1,The Standard,2_tax_billion_government_ford
+3,"school, boards, niagara, said, school boards",2,The Standard,3_students_colleges_school_education
+4,"encampments, clause, mayors, said, people",15,The Standard,4_encampments_homeless_people_housing
+5,"lanes, bike, bike lanes, cyclists, stevens",2,The Standard,5_bike_lanes_bike lanes_traffic
+8,"harm, harm reduction, sites, reduction, people",1,The Standard,8_sites_drug_health_consumption
+9,"erie, fort, police, company, said",1,The Standard,9_judges_police_bail_judicial
+10,"welland, target, housing, units, catharines",1,The Standard,10_housing_homes_affordable_units
+12,"science, science centre, centre, building, ontario science",2,The Standard,12_science_science centre_centre_buildin...
+16,"park, animals, place, animal, ontario place",3,The Standard,16_place_ontario place_therme_ontario
+17,"grimsby, transit, niagara, said, station",1,The Standard,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, land, ford, wake, rcmp",1,The Standard,18_greenbelt_commissioner_rcmp_integrity
+19,"serviceontario, welland, burch, bags, locations",3,The Standard,19_bags_paper_serviceontario_paper bags
+20,"hotel, government said, news conference, niagara falls, expensive",1,The Standard,20_workers_wage_court_public sector
+-1,"government, said, ontario, ford, province",83,The Hamilton Spectator,-1_government_ontario_said_ford
+0,"ford, election, trump, tariffs, said",167,The Hamilton Spectator,0_ford_election_tariffs_trump
+1,"care, health, hospital, patients, health care",59,The Hamilton Spectator,1_care_health_hospital_health care
+2,"tax, billion, government, ford, 200",46,The Hamilton Spectator,2_tax_billion_government_ford
+3,"students, school, schools, education, universities",51,The Hamilton Spectator,3_students_colleges_school_education
+4,"encampments, homeless, housing, people, mayor",43,The Hamilton Spectator,4_encampments_homeless_people_housing
+5,"lanes, bike, bike lanes, traffic, toronto",30,The Hamilton Spectator,5_bike_lanes_bike lanes_traffic
+6,"beer, stores, store, alcohol, wine",36,The Hamilton Spectator,6_beer_stores_store_alcohol
+7,"lcbo, strike, stores, opseu, union",30,The Hamilton Spectator,7_lcbo_strike_union_stores
+8,"sites, drug, health, consumption, treatment",21,The Hamilton Spectator,8_sites_drug_health_consumption
+9,"judges, police, bail, justice, said",30,The Hamilton Spectator,9_judges_police_bail_judicial
+10,"housing, homes, affordable, building, new",32,The Hamilton Spectator,10_housing_homes_affordable_units
+11,"energy, electricity, power, gas, nuclear",29,The Hamilton Spectator,11_energy_power_electricity_gas
+12,"science, science centre, centre, building, roof",21,The Hamilton Spectator,12_science_science centre_centre_buildin...
+13,"highway, 407, tunnel, 401, tolls",13,The Hamilton Spectator,13_tunnel_highway_401_407
+14,"arnott, speaker, legislature, ndp, wearing",19,The Hamilton Spectator,14_arnott_speaker_legislature_wearing
+15,"carbon, tax, carbon tax, crombie, federal",17,The Hamilton Spectator,15_carbon_tax_carbon tax_crombie
+16,"place, ontario place, therme, parking, ontario",9,The Hamilton Spectator,16_place_ontario place_therme_ontario
+17,"transit, station, rail, milton, metrolinx",4,The Hamilton Spectator,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, commissioner, rcmp, integrity, integrity commissioner",21,The Hamilton Spectator,18_greenbelt_commissioner_rcmp_integrity
+19,"bags, serviceontario, paper, paper bags, locations",9,The Hamilton Spectator,19_bags_paper_serviceontario_paper bags
+20,"workers, wage, public sector, court, 124",9,The Hamilton Spectator,20_workers_wage_court_public sector
+21,"land, development, urban, boundary, appeal",20,The Hamilton Spectator,21_land_development_urban_appeal
+-1,"ontario, ottawa, government, said, advertising",29,The Ottawa Citizen,-1_government_ontario_said_ford
+0,"election, ford, ontario, trump, party",53,The Ottawa Citizen,0_ford_election_tariffs_trump
+1,"care, health, hospital, patients, health care",26,The Ottawa Citizen,1_care_health_hospital_health care
+2,"tax, billion, budget, year, income",8,The Ottawa Citizen,2_tax_billion_government_ford
+3,"students, colleges, education, international, college",10,The Ottawa Citizen,3_students_colleges_school_education
+4,"encampments, penned, homeless, housing, people",6,The Ottawa Citizen,4_encampments_homeless_people_housing
+5,"bike, lanes, transportation, bike lanes, cycling",3,The Ottawa Citizen,5_bike_lanes_bike lanes_traffic
+6,"beer, store, stores, convenience, corner",5,The Ottawa Citizen,6_beer_stores_store_alcohol
+7,"lcbo, strike, union, workers, opseu",5,The Ottawa Citizen,7_lcbo_strike_union_stores
+8,"tibollo, treatment, mental health, mental, addictions",1,The Ottawa Citizen,8_sites_drug_health_consumption
+9,"jail, prison, said, detention, province",2,The Ottawa Citizen,9_judges_police_bail_judicial
+10,"faster, housing, sutcliffe, city, homes",1,The Ottawa Citizen,10_housing_homes_affordable_units
+11,"power, climate, energy, climate change, electricity",5,The Ottawa Citizen,11_energy_power_electricity_gas
+12,"roof, science centre, science, centre, ontario science",1,The Ottawa Citizen,12_science_science centre_centre_buildin...
+13,"tunnel, highway, 401, highway 401, idea",5,The Ottawa Citizen,13_tunnel_highway_401_407
+14,"nepean, macleod, arnott, legislature, speaker",2,The Ottawa Citizen,14_arnott_speaker_legislature_wearing
+17,"transit, lrt, ottawa, metrolinx, city",6,The Ottawa Citizen,17_transit_metrolinx_lrt_crosstown
+18,"frontier, greenbelt, properties, group, allegations",2,The Ottawa Citizen,18_greenbelt_commissioner_rcmp_integrity
+19,"bags, paper bags, paper, bag, lcbo",3,The Ottawa Citizen,19_bags_paper_serviceontario_paper bags
+20,"court, workers, appeal, wage, bargaining",1,The Ottawa Citizen,20_workers_wage_court_public sector
+-1,"ontario, advertising, windsor, government, said",16,The Windsor Star,-1_government_ontario_said_ford
+0,"election, tariffs, ford, windsor, ontario",48,The Windsor Star,0_ford_election_tariffs_trump
+1,"care, hospital, family, health, health care",4,The Windsor Star,1_care_health_hospital_health care
+2,"tax, billion, 200, ford, year",9,The Windsor Star,2_tax_billion_government_ford
+3,"school, students, board, education, schools",3,The Windsor Star,3_students_colleges_school_education
+4,"encampments, homeless, treatment, letter, clause",5,The Windsor Star,4_encampments_homeless_people_housing
+5,"lanes, bike, bike lanes, traffic, dramatic",1,The Windsor Star,5_bike_lanes_bike lanes_traffic
+6,"stores, beer, store, alcohol, corner",3,The Windsor Star,6_beer_stores_store_alcohol
+7,"lcbo, strike, union, stores, alcohol",4,The Windsor Star,7_lcbo_strike_union_stores
+8,"health, windsor, sites, addiction, gretzky",3,The Windsor Star,8_sites_drug_health_consumption
+9,"theft, judges, crime, police, auto",3,The Windsor Star,9_judges_police_bail_judicial
+11,"energy, electricity, chatham, gas, growth",2,The Windsor Star,11_energy_power_electricity_gas
+15,"carbon, carbon tax, tax, farmers, flack",1,The Windsor Star,15_carbon_tax_carbon tax_crombie
+17,"transit, freight, train, tecumseh, metrolinx",3,The Windsor Star,17_transit_metrolinx_lrt_crosstown
+19,"serviceontario, bags, locations, paper, paper bags",2,The Windsor Star,19_bags_paper_serviceontario_paper bags
+20,"workers, cupe, sector, members, wage",1,The Windsor Star,20_workers_wage_court_public sector
+21,"land, farmland, says, agricultural, development",1,The Windsor Star,21_land_development_urban_appeal
+-1,"ontario, ford, government, million, city",8,Sault Star,-1_government_ontario_said_ford
+0,"sault, election, ford, ste marie, sault ste",29,Sault Star,0_ford_election_tariffs_trump
+1,"care, health, health care, patients, doctors",15,Sault Star,1_care_health_hospital_health care
+2,"tax, allen, taxes, scott, said",2,Sault Star,2_tax_billion_government_ford
+3,"tuition, colleges, students, international, universities",6,Sault Star,3_students_colleges_school_education
+5,"bike, lanes, bike lanes, lane, bike lane",1,Sault Star,5_bike_lanes_bike lanes_traffic
+6,"beer, stores, taxes, alcohol, store",3,Sault Star,6_beer_stores_store_alcohol
+7,"lcbo, stores, strike, sale, convenience",1,Sault Star,7_lcbo_strike_union_stores
+8,"sites, consumption, sault, safe, health",5,Sault Star,8_sites_drug_health_consumption
+9,"gun, judges, judicial, criminals, people",1,Sault Star,9_judges_police_bail_judicial
+10,"housing, affordable, homes, units, affordable housing",1,Sault Star,10_housing_homes_affordable_units
+11,"energy, nuclear, nuclear energy, plants, power",1,Sault Star,11_energy_power_electricity_gas
+13,"highway, tunnel, idea, transit, feasibility study",1,Sault Star,13_tunnel_highway_401_407
+20,"court, 124, law, workers, supreme",1,Sault Star,20_workers_wage_court_public sector
+-1,"advertising, ontario, government, said, ford",20,The Ottawa Sun,-1_government_ontario_said_ford
+0,"ford, election, tariffs, trump, party",27,The Ottawa Sun,0_ford_election_tariffs_trump
+1,"care, health, hospital, family, health care",16,The Ottawa Sun,1_care_health_hospital_health care
+2,"tax, billion, spending, ford, budget",13,The Ottawa Sun,2_tax_billion_government_ford
+3,"students, colleges, education, college, international",8,The Ottawa Sun,3_students_colleges_school_education
+4,"encampments, homelessness, homeless, people, municipalities",2,The Ottawa Sun,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, traffic, transportation",4,The Ottawa Sun,5_bike_lanes_bike lanes_traffic
+6,"beer, store, stores, taxes, convenience",6,The Ottawa Sun,6_beer_stores_store_alcohol
+7,"lcbo, strike, union, stores, workers",8,The Ottawa Sun,7_lcbo_strike_union_stores
+8,"safer, sites, supply, health, addictions",3,The Ottawa Sun,8_sites_drug_health_consumption
+9,"jail, detention, said, ministry, province",2,The Ottawa Sun,9_judges_police_bail_judicial
+10,"housing, storey, buildings, residential, homes",3,The Ottawa Sun,10_housing_homes_affordable_units
+11,"energy, climate, change, climate change, nuclear",3,The Ottawa Sun,11_energy_power_electricity_gas
+13,"tunnel, build, project, ford, building tunnel",1,The Ottawa Sun,13_tunnel_highway_401_407
+14,"hahn, israel, arnott, macleod, speaker",5,The Ottawa Sun,14_arnott_speaker_legislature_wearing
+15,"carbon, tax, carbon tax, crombie, trudeau",4,The Ottawa Sun,15_carbon_tax_carbon tax_crombie
+17,"ottawa, transit, metrolinx, lrt, sutcliffe",1,The Ottawa Sun,17_transit_metrolinx_lrt_crosstown
+19,"bags, paper, lcbo, paper bags, plastic",4,The Ottawa Sun,19_bags_paper_serviceontario_paper bags
+-1,"000, ontario, government, north, said",15,Sudbury Star,-1_government_ontario_said_ford
+0,"sudbury, election, ford, ontario, said",55,Sudbury Star,0_ford_election_tariffs_trump
+1,"care, health, hospital, said, family",20,Sudbury Star,1_care_health_hospital_health care
+2,"debt, clock, taxpayers, doug ford, doug",8,Sudbury Star,2_tax_billion_government_ford
+3,"tuition, students, college, colleges, universities",4,Sudbury Star,3_students_colleges_school_education
+4,"lefebvre, homelessness, encampments, homeless, people",6,Sudbury Star,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, lane, traffic",2,Sudbury Star,5_bike_lanes_bike lanes_traffic
+6,"stores, beer, store, recycling, sales",2,Sudbury Star,6_beer_stores_store_alcohol
+7,"strike, retailers, folks, easy, liquor",1,Sudbury Star,7_lcbo_strike_union_stores
+8,"sites, consumption, hart, services, drug",4,Sudbury Star,8_sites_drug_health_consumption
+9,"gun, judges, criminals, judicial, people",2,Sudbury Star,9_judges_police_bail_judicial
+10,"housing, water, sudbury, wastewater, city greater",1,Sudbury Star,10_housing_homes_affordable_units
+11,"climate, court, case, emissions, rights",2,Sudbury Star,11_energy_power_electricity_gas
+13,"highway 69, timetable, finish, 69, ring",2,Sudbury Star,13_tunnel_highway_401_407
+14,"vowed, ban, ontario ndp, rules, legislature",1,Sudbury Star,14_arnott_speaker_legislature_wearing
+15,"ford came, farmers, federal carbon, carbon tax, carbon",1,Sudbury Star,15_carbon_tax_carbon tax_crombie
+16,"spa, plan, concerned, ontario place, includes",1,Sudbury Star,16_place_ontario place_therme_ontario
+20,"court, 124, law, workers, supreme",1,Sudbury Star,20_workers_wage_court_public sector
+-1,"ontario, government, advertising, ford, million",19,National Post,-1_government_ontario_said_ford
+0,"ford, election, tariffs, trump, ontario",78,National Post,0_ford_election_tariffs_trump
+1,"care, health, medical, health care, school",16,National Post,1_care_health_hospital_health care
+2,"tax, billion, government, budget, year",16,National Post,2_tax_billion_government_ford
+3,"students, student, universities, colleges, teachers",12,National Post,3_students_colleges_school_education
+4,"encampment, encampments, shelter, housing, mental",2,National Post,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, traffic, gridlock",4,National Post,5_bike_lanes_bike lanes_traffic
+6,"beer, stores, lcbo, store, retail",10,National Post,6_beer_stores_store_alcohol
+7,"lcbo, strike, union, opseu, stores",8,National Post,7_lcbo_strike_union_stores
+8,"sites, injection, drug, site, mohammed",7,National Post,8_sites_drug_health_consumption
+9,"bail, judges, police, appointments, crime",7,National Post,9_judges_police_bail_judicial
+10,"housing, year, homes, new, cent",4,National Post,10_housing_homes_affordable_units
+11,"power, wind, energy, electricity, electric",2,National Post,11_energy_power_electricity_gas
+12,"centre, science centre, science, roof, engineering",1,National Post,12_science_science centre_centre_buildin...
+13,"tunnel, highway, 401, congestion, transit",4,National Post,13_tunnel_highway_401_407
+14,"palestinian, ndp, israel, caucus, arnott",4,National Post,14_arnott_speaker_legislature_wearing
+15,"carbon, tax, trudeau, carbon tax, housing",1,National Post,15_carbon_tax_carbon tax_crombie
+19,"serviceontario, locations, bags, government services, services",1,National Post,19_bags_paper_serviceontario_paper bags
+20,"catholic, sector, public sector, french, public",3,National Post,20_workers_wage_court_public sector
+-1,"said, government, ontario, ford, children",107,Toronto Star,-1_government_ontario_said_ford
+0,"ford, election, cent, trump, tariffs",189,Toronto Star,0_ford_election_tariffs_trump
+1,"care, health, patients, hospital, medical",49,Toronto Star,1_care_health_hospital_health care
+2,"tax, billion, government, ford, 200",54,Toronto Star,2_tax_billion_government_ford
+3,"students, school, education, schools, universities",60,Toronto Star,3_students_colleges_school_education
+4,"encampments, homeless, people, housing, homelessness",35,Toronto Star,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, city, toronto",56,Toronto Star,5_bike_lanes_bike lanes_traffic
+6,"beer, stores, store, alcohol, beer store",25,Toronto Star,6_beer_stores_store_alcohol
+7,"lcbo, strike, opseu, stores, union",26,Toronto Star,7_lcbo_strike_union_stores
+8,"sites, drug, consumption, health, treatment",38,Toronto Star,8_sites_drug_health_consumption
+9,"judges, police, appointments, bail, justice",39,Toronto Star,9_judges_police_bail_judicial
+10,"housing, homes, rent, affordable, units",41,Toronto Star,10_housing_homes_affordable_units
+11,"energy, electricity, power, gas, nuclear",25,Toronto Star,11_energy_power_electricity_gas
+12,"science, science centre, centre, building, roof",29,Toronto Star,12_science_science centre_centre_buildin...
+13,"tunnel, highway, 407, 401, tolls",24,Toronto Star,13_tunnel_highway_401_407
+14,"arnott, speaker, legislature, ban, wearing",15,Toronto Star,14_arnott_speaker_legislature_wearing
+15,"carbon, tax, carbon tax, crombie, federal",12,Toronto Star,15_carbon_tax_carbon tax_crombie
+16,"place, ontario place, therme, ontario, spa",24,Toronto Star,16_place_ontario place_therme_ontario
+17,"transit, metrolinx, lrt, crosstown, eglinton",19,Toronto Star,17_transit_metrolinx_lrt_crosstown
+18,"greenbelt, commissioner, rcmp, integrity, integrity commissioner",21,Toronto Star,18_greenbelt_commissioner_rcmp_integrity
+19,"bags, serviceontario, paper, paper bags, locations",12,Toronto Star,19_bags_paper_serviceontario_paper bags
+20,"workers, wage, 124, court, public sector",14,Toronto Star,20_workers_wage_court_public sector
+21,"land, development, oakville, appeal, planning",9,Toronto Star,21_land_development_urban_appeal
+-1,"government, ontario, county, said, million",7,Kingston Whig-Standard,-1_government_ontario_said_ford
+0,"election, ford, tariffs, trump, party",34,Kingston Whig-Standard,0_ford_election_tariffs_trump
+1,"care, health, family, doctors, clinics",4,Kingston Whig-Standard,1_care_health_hospital_health care
+2,"tax, billion, spending, ford, budget",4,Kingston Whig-Standard,2_tax_billion_government_ford
+3,"students, colleges, college, tuition, international",3,Kingston Whig-Standard,3_students_colleges_school_education
+4,"encampments, homelessness, people, municipalities, parks",1,Kingston Whig-Standard,4_encampments_homeless_people_housing
+5,"bike, lanes, bike lanes, lane, bike lane",1,Kingston Whig-Standard,5_bike_lanes_bike lanes_traffic
+6,"beer, taxes, stores, craft, alcohol",2,Kingston Whig-Standard,6_beer_stores_store_alcohol
+7,"lcbo, opseu, strike, employees, union",1,Kingston Whig-Standard,7_lcbo_strike_union_stores
+8,"bridge, belleville, centre, tainted, drugs",1,Kingston Whig-Standard,8_sites_drug_health_consumption
+9,"bail, judges, police, gun, people",2,Kingston Whig-Standard,9_judges_police_bail_judicial
+10,"housing, kingston, target, homes, goal",1,Kingston Whig-Standard,10_housing_homes_affordable_units
+13,"highway, tunnel, idea, transit, feasibility study",1,Kingston Whig-Standard,13_tunnel_highway_401_407
+17,"express, metrolinx, documents, train, reversal",1,Kingston Whig-Standard,17_transit_metrolinx_lrt_crosstown
+21,"land, farmland, says, agricultural, development",1,Kingston Whig-Standard,21_land_development_urban_appeal

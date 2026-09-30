@@ -155,3 +155,5 @@ ndoc(df_corp)
 pair_check %>% view()
 # Save the syndication evidence for the team discussion:
 # write.csv(subset(pair_check, !fam), "syndicated_pairs_kept.csv", row.names = FALSE)
+
+write.csv(df, "data/articles.csv")

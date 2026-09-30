@@ -1,0 +1,38 @@
+topic,keyword,count_in_10article_pilot,article_ids
+housing,housing,5,3052716586
+housing,rent,1,2967007606
+housing,homeless,2,2967007606
+tariffs_trade,tariff,7,3159749017;3163297700
+tariffs_trade,tariffs,5,3159749017
+health_care,hospital,1,2967007606
+health_care,health care,1,3059793506
+health_care,doctor,3,3059793506
+health_care,physician,3,3059793506
+education,school,2,3111375600
+post_secondary,student,2,3111375600
+post_secondary,university,2,3114142983
+post_secondary,professor,1,3114142983
+immigration,asylum,1,3013971640
+crime,criminal,1,3052716586
+crime,police,1,3052716586
+crime,crime,4,3061561933;3013971640
+crime,crimes,1,3061561933
+crime,theft,9,3061561933
+crime,violent,1,3061561933
+crime,police,3,3061561933;3013971640
+municipal_powers [new topic],municipal,4,3052716586;2967007606;3013971640
+municipal_powers [new topic],municipalities,2,2967007606
+municipal_powers [new topic],councillor,4,2967007606;3061561933;3159749017
+municipal_powers [new topic],city council,1,3061561933
+municipal_powers [new topic],ward,8,3061561933
+municipal_powers [new topic],cross-jurisdictional,1,3061561933
+municipal_powers [new topic],mayor,3,3013971640;3159749017
+municipal_powers [new topic],upload,2,3013971640
+public_transit [new topic],highway,1,3013971640
+public_transit [new topic],transit,1,3159749017
+public_transit [new topic],bike lane(s),0,NONE FOUND in this batch
+"Labour dispute / Alcohol retail (LCBO) [new topic, no dictionary]","n/a — identified via reading, not lexical match",0,3082873316
+"Science Centre / public institutions [new topic, no dictionary]","n/a — identified via reading, not lexical match",0,3114142983
+"Social assistance / poverty [new topic, no dictionary]","n/a — identified via reading, not lexical match",0,2967007606
+"Campaign dynamics / opposition strategy [new topic, no dictionary]","n/a — identified via reading, not lexical match",0,3163297700
+taxes,NONE FOUND in this batch,0,
