@@ -6,7 +6,7 @@ dfm <- df_tokens_on %>%
   dfm() 
 
 
-dir.create("Plots", showWarnings = FALSE)
+#dir.create("Plots", showWarnings = FALSE)
 
 ## keyATM_docs stores documents in $W_raw, not $W.
 n_keyatm_docs <- function(x) if (!is.null(x$W_raw)) length(x$W_raw) else length(x)
@@ -196,7 +196,7 @@ save_fig(Topic_frequency, "Plots/Topic_frequency.png", width = 8, height = 5)  #
 covariates_info(newssource)
 newsource_keyatm <- top_words(newssource, n = 100)
 
-
+newsource_keyatm
 
 ## ---- 6. Per-newspaper strata ----------------------------------------------
 ## Derive the paper list FROM the fitted model so a by_var can never be missing
