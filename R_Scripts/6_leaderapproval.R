@@ -16,11 +16,9 @@ raw <- read_excel(
 
 # --- 2. Clean ---------------------------------------------------------
 polls <- raw |>
-  filter(
-    (Pollster == "Abacus Data" & Metric == "net impression") |
-      (Pollster == "Angus Reid Institute" & Metric %in% c("net favourability", "net approval"))
-  ) |>
-  rename(
+ # filter(Pollster %in% c("Abacus Data", "Angus Reid Institute", "Liaison Strategies")) |>
+  filter(Pollster %in% c("Abacus Data")) |>
+   rename(
     field_end = `Field End`,
     leader    = Leader,
     net       = Net,
@@ -38,7 +36,7 @@ polls <- raw |>
       leader,
       levels = c("Ford", "Crombie", "Stiles", "Fraser (interim Lib)")
     ),
-    pollster = factor(pollster, levels = c("Abacus Data", "Angus Reid Institute"))
+    pollster = factor(pollster, levels = c("Abacus Data", "Angus Reid Institute", "Liaison Strategies"))
   ) |>
   filter(!is.na(date), !is.na(net), date >= as.Date("2024-01-01")) |>
   arrange(leader, pollster, date)
@@ -53,7 +51,7 @@ party_cols <- c(
 election_day <- as.Date("2025-02-27")
 
 # --- Restrict to pre-election period --------------------------------
-polls <- polls |> filter(date <= election_day)
+polls <- polls |> filter(date < election_day)
 
 # Direct labels: last wave per leader (across either pollster)
 labels <- polls |>
@@ -69,8 +67,8 @@ y_top    <- max(polls$net) + 6
 y_bottom <- min(polls$net) - 3
 
 # --- 4. Plot -------------------------------------------------------
-p <- ggplot(polls, aes(x = date, y = net, colour = leader, linetype = pollster,
-                       group = interaction(leader, pollster))) +
+p <- ggplot(polls, aes(x = date, y = net, colour = leader, shape = pollster,
+                       group = leader)) +
   geom_hline(yintercept = 0, linewidth = 0.3, colour = "grey55") +
   geom_vline(xintercept = election_day, linetype = "dotted",
              colour = "grey45", linewidth = 0.5) +
@@ -78,7 +76,7 @@ p <- ggplot(polls, aes(x = date, y = net, colour = leader, linetype = pollster,
            label = "Election\nFeb 27, 2025",
            hjust = 1.05, vjust = 1, size = 3.1, colour = "grey25",
            fill = "white", label.size = 0, label.padding = unit(0.15, "lines")) +
-  geom_line(linewidth = 0.9, alpha = 0.9) +
+  geom_smooth(method = "loess", se = FALSE) +
   geom_point(size = 2.3) +
   geom_text_repel(
     data = labels,
@@ -90,9 +88,8 @@ p <- ggplot(polls, aes(x = date, y = net, colour = leader, linetype = pollster,
     show.legend = FALSE
   ) +
   scale_colour_manual(values = party_cols, guide = "none") +
-  scale_linetype_manual(values = c("Abacus Data" = "solid", "Angus Reid Institute" = "dashed"),
-                        name = "Pollster") +
-  guides(linetype = guide_legend(keywidth = unit(1.8, "cm"))) +
+  scale_shape_manual(values = c("Abacus Data" = 16, "Angus Reid Institute" = 17, "Liaison Strategies" = 15),
+                     name = "Pollster") +
   scale_x_date(breaks = seq(as.Date("2024-01-01"), election_day, by = "3 months"),
                date_labels = "%b %Y",
                limits = c(as.Date("2024-01-01"), NA),
@@ -101,7 +98,7 @@ p <- ggplot(polls, aes(x = date, y = net, colour = leader, linetype = pollster,
   coord_cartesian(clip = "off") +
   labs(
     title    = "Net ratings of Ontario party leaders, Jan 2024\u2013Feb 2025",
-    subtitle = "Abacus Data (net impression) & Angus Reid Institute (net favourability/approval), by survey wave",
+    subtitle = "Abacus Data, Angus Reid Institute & Liaison Strategies net ratings, by survey wave",
     x = NULL, y = "Net rating (points)",
     caption  = "Typical wave MOE \u00b1\u22483 percentage points."
   ) +
