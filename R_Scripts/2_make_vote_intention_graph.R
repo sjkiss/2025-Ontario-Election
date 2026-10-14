@@ -70,7 +70,6 @@ plot_precampaign<-make_vote_plot(
            label = "Bonnie Crombie elected\nLiberal leader",
            hjust = 0, size = 4, lineheight=0.8)
 
-precampaign_plot
 # Campaign plot
 plot_campaign <- make_vote_plot(
   polls_campaign,
