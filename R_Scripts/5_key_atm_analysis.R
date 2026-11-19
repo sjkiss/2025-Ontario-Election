@@ -108,9 +108,11 @@ keywords <- list(
   crime = c("crime", "crimes", "criminal", "police", "policing",
             "theft", "shooting", "homicide",
             "murder", "violence", "bail", "carjacking",
-            "gang", "violent", "prison"),
-  leaders=c("stiles", "ford", "crombie", "schreiner", "approval", 
-            "popular", "unpopular", "approve", "disapprove", "disapproval")
+            "gang", "violent", "prison")#,
+  
+  # leaders=c("stiles", "ford", "crombie", "schreiner", "approval", 
+  #           "popular", "unpopular", "approve", "disapprove", "disapproval", "conservative", "pc",
+  #           "liberal", "ndp", "poll", "election", "like")
 )
 
 
@@ -189,13 +191,93 @@ newssource <- keyATM(
 )
 
 
+## show_topic = all fitted topics (9 keyword + 7 no-keyword here) -- a fixed
+## 1:12 would silently drop topics whenever the keyword/no_keyword counts change.
+## plot_topicprop()$values$Topic uses the STRIPPED keyword names (e.g. "housing",
+## not "1_housing") for keyword topics, and "Other_1".."Other_7" for no-keyword
+## ones -- different from the "1_housing" form used in section 7's Newspaper_df.
+## Labels checked against top_words(newssource) at time of writing; the "*"
+## marks keyword-guided topics, matching the section-7 convention.
+TOPIC_LABELS <- c(
+  housing        = "Housing*",
+  tariffs_trade  = "Tariffs/Trade*",
+  taxes          = "Taxes/Investment*",
+  health_care    = "Health Care*",
+  education      = "Education*",
+  post_secondary = "Post-Secondary*",
+  immigration    = "Immigration*",
+  crime          = "Crime*",
+  leaders        = "Leaders*",
+  Other_1        = "General Commentary",        
+  Other_2        = "Energy",                    
+  Other_3        = "Federal-Provincial Relations",      
+  Other_4        = "Scandals (i.e., Greenbelt)", 
+  Other_5        = "LCBO",                 
+  Other_6        = "Ontario Line and Science Centre",     
+  Other_7        = "Muncipal Transportation"   
+)
 
-Topic_frequency <- plot_topicprop(newssource, show_topic = 1:12)
+## Words printed next to each bar. plot_topicprop() defaults to the n most
+## FREQUENT words, which are dominated by generic terms ("ford", "ontario",
+## "government"). These are hand-picked as the most DISTINCTIVE words from each
+## topic's top 100 (data/top_words.csv) -- edit freely. Same keys as TOPIC_LABELS.
+## Write compounded tokens with a space ("primary care", not "primary_care").
+TOPIC_WORDS <- list(
+  housing        = c("housing", "homelessness", "encampments", "affordable"),
+  tariffs_trade  = c("tariffs", "trump", "trade", "border"),
+  taxes          = c("tax", "budget", "carbon", "deficit"),
+  health_care    = c("hospital", "doctors", "patients", "primary care"),
+  education      = c("schools", "teachers", "students", "parents"),
+  post_secondary = c("universities", "colleges", "tuition", "international"),
+  immigration    = c("immigration", "immigrants", "newcomers", "refugee"),
+  crime          = c("police", "bail", "judges", "addiction"),
+  leaders        = c("crombie", "stiles", "schreiner", "polls"),
+  Other_1        = c("political", "politicians", "politics", "legislature"),
+  Other_2        = c("energy", "electricity", "nuclear", "climate"),
+  Other_3        = c("federal", "advertising", "media", "journalism"),
+  Other_4        = c("greenbelt", "integrity", "rcmp", "investigation"),
+  Other_5        = c("lcbo", "alcohol", "convenience", "strike"),
+  Other_6        = c("science", "therme", "waterfront", "metrolinx"),
+  Other_7        = c("bike", "lanes", "congestion", "transit")
+)
+
+## Swap plot_topicprop()'s default words for a hand-picked list, warning about
+## any word not in that topic's top 100 (typos, or topics shifted after a
+## refit). Warning only, so manual overrides still work.
+set_topic_words <- function(fig, model, words) {
+  fig_topics <- as.character(fig$figure$data$Topic)
+  top100 <- top_words(model, n = 100) %>%
+    mutate(across(everything(), ~ str_remove(.x, " \\[.*\\]$")))
+  names(top100) <- str_remove(names(top100), "^\\d+_")
+  for (tp in intersect(fig_topics, names(words))) {
+    off_list <- setdiff(str_replace_all(words[[tp]], " ", "_"), top100[[tp]])
+    if (length(off_list)) message("Topic words for ", tp, " not in top 100: ",
+                                  paste(off_list, collapse = ", "))
+  }
+  if (length(missing_words <- setdiff(fig_topics, names(words))))
+    message("No topic words given (keeping defaults): ",
+            paste(missing_words, collapse = ", "))
+  fig$figure$data$Topwords <- coalesce(
+    map_chr(words[fig_topics], ~ if (is.null(.x)) NA_character_ else paste(.x, collapse = ", ")),
+    fig$figure$data$Topwords
+  )
+  fig
+}
+
+Topic_frequency <- plot_topicprop(newssource, show_topic = 1:ncol(newssource$theta))
+topic_pcts <- Topic_frequency$figure$data %>%
+  transmute(Topic, Percent = round(Topicprop * 100, 1)) %>%
+  arrange(desc(Percent))
+Topic_frequency <- set_topic_words(Topic_frequency, newssource, TOPIC_WORDS)
+Topic_frequency$figure$data$Topic <- factor(
+  TOPIC_LABELS[as.character(Topic_frequency$figure$data$Topic)],
+  levels = TOPIC_LABELS[levels(Topic_frequency$figure$data$Topic)]
+)
 save_fig(Topic_frequency, "Plots/Topic_frequency.png", width = 8, height = 5)  # not ggsave
 
 covariates_info(newssource)
 newsource_keyatm <- top_words(newssource, n = 100)
-
+write.csv(newsource_keyatm, "data/top_words.csv")
 
 
 ## ---- 6. Per-newspaper strata ----------------------------------------------
@@ -240,7 +322,7 @@ topic_by_newspaper <- Newspaper_df %>%
     Topic = case_match(Topic,
                        "1_housing"        ~ "Housing*",
                        "2_tariffs_trade"  ~ "Tariffs/Trade*",
-                       "3_taxes"          ~ "Taxes*",
+                       "3_taxes"          ~ "Taxes/Investment*",
                        "4_health_care"    ~ "Health Care*",
                        "5_education"      ~ "Education*",
                        "6_post_secondary" ~ "Post-Secondary*",
@@ -338,12 +420,15 @@ message("Kept ", nrow(Vars_clean), " docs across ", max(Vars3$week_num), " weeks
 
 overtime <- keyATM(
   docs = keyatm_dfm_clean,
-  no_keyword_topics = 5,
+  no_keyword_topics = 7,
   keywords = keywords_dyn,
   model = "dynamic",
   model_settings = list(time_index = Vars3$week_num, num_states = 10),
   options = list(seed = 1998)
 )
+
+overtime_keyatm <- top_words(overtime, n = 100)
+write.csv(overtime_keyatm, "data/top_words_overtime.csv")
 
 ## plot_timetrend defaults to show_topic = 1:keyword_k, so the 5 no_keyword
 ## topics never appear. Pass every column of theta to show them too.
@@ -362,17 +447,119 @@ fig_timetrend <- plot_timetrend(overtime, time_index_label = Vars_clean$week,
 TIMETREND_LABELS <- c(
   `1_housing`        = "Housing*",
   `2_tariffs_trade`  = "Tariffs/Trade*",
-  `3_taxes`          = "Taxes*",
+  `3_taxes`          = "Taxes/Investment*",
   `4_health_care`    = "Health Care*",
   `5_education`      = "Education*",
-  `6_post_secondary` = "Post-Secondary* (LCBO)",
+  `6_post_secondary` = "Post-Secondary*",
   `7_crime`          = "Crime*",
-  Other_1        = "Leaders",
-  Other_2        = "Energy",
-  Other_3        = "election",
-  Other_4        = "Ford/Horse Race",
-  Other_5        = "Transportation"
+  `8_leaders`        = "Leaders*",
+  `Other_1`        = "Science Centre/Safe Consumption Sites",
+  `Other_2`        = "General Commentary",
+  `Other_3`        = "Green Belt Scandal",
+  `Other_4`        = "Bike Lanes/Transportation",
+  `Other_5`        = "LCBO/Alcohol",
+  Other_6  = "Energy",
+  Other_7 = "Federal-Provincial Relations"
 )
+
+
+
+
+## Topic proportions for the DYNAMIC (overtime) model. Same key form as
+## TOPIC_LABELS above ("housing", "Other_1"), but Other_* are this model's own
+## topics, so the labels follow TIMETREND_LABELS, not the covariates model.
+TOPIC_LABELS_DYN <- c(
+  housing        = "Housing*",
+  tariffs_trade  = "Tariffs/Trade*",
+  taxes          = "Taxes/Investment*",
+  health_care    = "Health Care*",
+  education      = "Education*",
+  post_secondary = "Post-Secondary*",
+  crime          = "Crime*",
+  Other_1        = "Bike Lanes/Transportation",
+  Other_2        = "LCBO/Alcohol",
+  Other_3        = "General Commentary",
+  Other_4        = "Ontario Place/Science Centre",
+  Other_5        = "Media/Advertising",
+  Other_6        = "Legislature/MPPs",
+  Other_7        = "Energy"
+)
+
+## Hand-picked distinctive words from each topic's top 100
+## (data/top_words_overtime.csv) -- edit freely, same rules as TOPIC_WORDS.
+TOPIC_WORDS_DYN <- list(
+  housing        = c("housing", "affordable", "encampments"),
+  tariffs_trade  = c("tariffs", "trump", "trade", "threat"),
+  taxes          = c("tax", "carbon", "budget", "deficit"),
+  health_care    = c("hospital", "doctors", "primary care", "addiction"),
+  education      = c("schools", "teachers", "students", "parents"),
+  post_secondary = c("universities", "colleges", "tuition", "international"),
+  crime          = c("police", "bail", "judges", "greenbelt"),
+  Other_1        = c("bike", "lanes", "gridlock", "transit"),
+  Other_2        = c("lcbo", "alcohol", "convenience", "strike"),
+  Other_3        = c("political", "politicians", "politics", "policy"),
+  Other_4        = c("science", "therme", "spa", "waterfront"),
+  Other_5        = c("advertising", "media", "journalism", "newspaper"),
+  Other_6        = c("legislature", "mpp", "riding", "byelection"),
+  Other_7        = c("energy", "electricity", "nuclear", "ev")
+)
+
+## xmax leaves room for the word labels -- raise it if long words get clipped.
+Topic_frequency_dyn <- plot_topicprop(overtime, show_topic = 1:ncol(overtime$theta),
+                                      xmax = 0.45)
+topic_pcts_dyn <- Topic_frequency_dyn$figure$data %>%
+  transmute(Topic, Percent = round(Topicprop * 100, 1)) %>%
+  arrange(desc(Percent))
+Topic_frequency_dyn <- set_topic_words(Topic_frequency_dyn, overtime, TOPIC_WORDS_DYN)
+Topic_frequency_dyn$figure$data$Topic <- factor(
+  TOPIC_LABELS_DYN[as.character(Topic_frequency_dyn$figure$data$Topic)],
+  levels = TOPIC_LABELS_DYN[levels(Topic_frequency_dyn$figure$data$Topic)]
+)
+
+## Pooled vs. campaign-period proportions, both from the SAME overtime model:
+## mean theta over all documents (= what plot_topicprop reports) vs. mean theta
+## over documents dated on/after the election call. Uses the document date, not
+## the Monday-floored week, so pre-call docs in that week stay out.
+ELECTION_CALL <- as.Date("2025-01-29")
+post_call <- Vars_clean$date >= ELECTION_CALL
+stopifnot(length(post_call) == nrow(overtime$theta), !anyNA(post_call))
+
+PERIOD_LABELS <- c(pooled = "Pooled (all weeks)",
+                   post   = paste0("After election call (", format(ELECTION_CALL, "%b %d, %Y"), ")"))
+
+## Topic order, labels and words come from Topic_frequency_dyn above.
+topic_levels <- levels(Topic_frequency_dyn$figure$data$Topic)
+period_df <- tibble(
+  key    = str_remove(colnames(overtime$theta), "^\\d+_"),
+  pooled = colMeans(overtime$theta),
+  post   = colMeans(overtime$theta[post_call, , drop = FALSE])
+) %>%
+  pivot_longer(c(pooled, post), names_to = "Period", values_to = "Topicprop") %>%
+  mutate(Topic  = factor(TOPIC_LABELS_DYN[key], levels = topic_levels),
+         Period = factor(PERIOD_LABELS[Period], levels = rev(PERIOD_LABELS)))
+stopifnot(!anyNA(period_df$Topic))
+
+words_df <- Topic_frequency_dyn$figure$data %>%
+  select(Topic, Topwords) %>%
+  mutate(xpos = max(period_df$Topicprop) + 0.01)
+
+topic_freq_period <- ggplot(period_df, aes(x = Topicprop, y = Topic, fill = Period)) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
+  geom_text(data = words_df, aes(x = xpos, y = Topic, label = Topwords),
+            inherit.aes = FALSE, hjust = 0, size = 3.2) +
+  scale_x_continuous("Expected topic proportions",
+                     limits = c(0, max(period_df$Topicprop) + 0.25),
+                     labels = function(x) paste0(round(x * 100), "%")) +
+  scale_fill_manual(NULL, values = setNames(c("grey35", "firebrick"), PERIOD_LABELS)) +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  labs(y = NULL) +
+  theme_bw() +
+  theme(panel.grid = element_blank(), legend.position = "bottom")
+
+message("Docs after election call: ", sum(post_call), " of ", length(post_call))
+ggsave("Plots/Topic_frequency_overtime.png", topic_freq_period, width = 9, height = 7)
+topic_freq_period
+
 
 ## Order facets the way TIMETREND_LABELS lists them (keyword topics first).
 lv <- intersect(names(TIMETREND_LABELS),
@@ -381,13 +568,42 @@ fig_timetrend$figure$data$Topic <-
   factor(as.character(fig_timetrend$figure$data$Topic), levels = lv)
 
 ## Vertical marker at the start of the campaign period (writ dropped 29 Jan
-## 2025). The x-axis is Vars_clean$week (Date), so xintercept is a Date too.
-ELECTION_CALL <- as.Date("2025-01-29")
+## 2025; ELECTION_CALL is set above). The x-axis is Vars_clean$week (Date), so
+## xintercept is a Date too.
 fig_timetrend$figure <- fig_timetrend$figure +
-  facet_wrap(~ Topic, scales = "fixed",
+  facet_wrap(~ Topic, scales = "fixed", nrow = 3,
              labeller = as_labeller(TIMETREND_LABELS)) +
   geom_vline(xintercept = ELECTION_CALL, linetype = "dashed",
-             colour = "firebrick", linewidth = 0.6)
+             colour = "firebrick", linewidth = 0.6) +
+  labs(y = "Average Document Topic Proportion by Week") + 
+  theme(panel.spacing.x = unit(0.5, "cm"))
 
-save_fig(fig_timetrend, "Plots/timetrend.png", width = 10, height = 8)
+save_fig(fig_timetrend, "Plots/timetrend.png", width = 15, height = 7)
 fig_timetrend
+
+
+##### Leader Topics #####
+
+keywords_leaders <- list(
+  Ford = c("ford", "doug", "pc", "conservative", "government", "queens"),
+  
+  Stiles = c("stiles", "marit", "ndp"),
+  
+  Crombie = c("crombie", "bonnie", "liberal"),
+  
+  Schreiner = c("schreiner", "mike", "green")
+  
+)
+
+leaders_model <- keyATM(
+  docs = keyatm_dfm,
+  no_keyword_topics = 1,
+  keywords = keywords_leaders,
+  model = "base",
+  options = list(seed = 1998)
+)
+
+topic_frequency_leaders <- plot_topicprop(leaders_model, show_topic = 1:4)
+leaders_keyatm <- top_words(leaders_model, n = 100)
+
+

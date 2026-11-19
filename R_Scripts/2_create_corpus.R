@@ -16,9 +16,10 @@ df_corp <- gsub("([a-z])\\.([A-Z])", "\\1. \\2", df_corp)
 
 df_tokens <- tokens(df_corp, remove_punct = TRUE) %>%
   tokens_remove(c(stopwords("en"), "said", "mr", "ms", "mrs",
-                  "also", "get")) %>%
+                  "also", "get", "$", "per", "cent")) %>%
   tokens_tolower()
 
+df_tokens <- tokens_remove(df_tokens, "^\\d+$", valuetype = "regex")
 # ---- Ontario signal, minus bare "ford" (handled separately below) ----
 on_signal_rest <- dictionary(list(
   on = c("crombie", "stiles", "schreiner",

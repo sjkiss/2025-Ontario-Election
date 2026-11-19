@@ -168,28 +168,12 @@ def is_ontario_article(text_lower: str) -> bool:
 # Same 7 categories as the R script; immigration stays commented out to match.
 # ---------------------------------------------------------------------------
 SEED_TOPIC_LIST = [
-    ["housing", "rent", "rents", "renter", "landlord", "affordability",
-     "homebuilding", "homebuilder", "apartment", "apartments", "encampment",
-     "house", "permit", "zoning", "tenant", "mortgage", "homeless", "condo",
-     "nimby", "housing affordability"],
-    ["tariff", "tariffs", "trade", "protectionist", "countervailing", "buy",
-     "countervail", "buy canadian", "buy american"],
-    ["tax", "taxes", "taxation", "taxpayer", "hst"],
-    ["health care", "healthcare", "hospital", "doctor", "physician",
-     "primary care", "nurse", "nursing", "hospitals", "dr", "ohip", "surgery"],
-    ["education", "school", "teacher", "classroom", "teachers", "curriculum",
-     "kindergarten", "schools", "students"],
-    ["post secondary", "post-secondary", "postsecondary", "university",
-     "college", "colleges", "tuition", "professor", "opseu", "campus",
-     "universities", "osap", "student"],
-    ["crime", "crimes", "criminal", "police", "policing", "theft", "shooting",
-     "homicide", "murder", "violence", "bail", "carjacking", "gang",
-     "violent", "prison"],
-    # ["immigration", "immigrant", "migrant", "refugee", "asylum", "newcomer",
-    #  "deportation", "visa", "immigrants", "newcomers"],
+    ["ford", "conservative", "doug", "pc", "government"],
+    ["crombie", "bonnie", "liberal"],
+    ["stiles", "marit", "ndp"],
+   ["schreiner", "mike", "green"]
 ]
-SEED_LABELS = ["housing", "tariffs_trade", "taxes", "health_care",
-               "education", "post_secondary", "crime"]
+SEED_LABELS = ["Ford", "Crombie", "Stiles", "Schreiner"]
 
 
 # ---------------------------------------------------------------------------

@@ -4,6 +4,8 @@ library(janitor)
 library(readr)
 library(lubridate)
 library(writexl)
+library(haven)
+library(srvyr)
 
 # URL
 url <- "https://en.wikipedia.org/wiki/2025_Ontario_general_election"
