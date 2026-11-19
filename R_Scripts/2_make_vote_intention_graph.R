@@ -35,11 +35,10 @@ make_vote_plot <- function(data, title, subtitle) {
     geom_point(aes(y = Liberal, color = "Liberal"), alpha = 0.5, size = 1) +
     geom_point(aes(y = Green,   color = "Green"),   alpha = 0.5, size = 1) +
     
-    geom_smooth(aes(y = PC,      color = "PC"),      se = FALSE, linewidth = 1) +
-    geom_smooth(aes(y = NDP,     color = "NDP"),     se = FALSE, linewidth = 1) +
-    geom_smooth(aes(y = Liberal, color = "Liberal"), se = FALSE, linewidth = 1) +
-    geom_smooth(aes(y = Green,   color = "Green"),   se = FALSE, linewidth = 1) +
-    
+    geom_smooth(aes(y = PC,      color = "PC"),      se = FALSE, linewidth = 1, span=0.25) +
+    geom_smooth(aes(y = NDP,     color = "NDP"),     se = FALSE, linewidth = 1, span=0.25) +
+    geom_smooth(aes(y = Liberal, color = "Liberal"), se = FALSE, linewidth = 1, span=0.25) +
+    geom_smooth(aes(y = Green,   color = "Green"),   se = FALSE, linewidth = 1, span=0.25) +
     labs(
       title    = title,
       subtitle = subtitle,
@@ -70,7 +69,7 @@ plot_precampaign<-make_vote_plot(
            label = "Bonnie Crombie elected\nLiberal leader",
            hjust = 0, size = 4, lineheight=0.8)
 
-precampaign_plot
+
 # Campaign plot
 plot_campaign <- make_vote_plot(
   polls_campaign,
